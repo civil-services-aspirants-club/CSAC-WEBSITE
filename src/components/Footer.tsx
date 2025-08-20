@@ -1,8 +1,6 @@
 import { GraduationCap, Mail, Phone, MapPin, Instagram, Linkedin, MessageCircle, Flag, Heart } from "lucide-react";
-
 const Footer = () => {
-  return (
-    <footer className="bg-primary text-primary-foreground tricolor-border">
+  return <footer className="bg-primary text-primary-foreground tricolor-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Mission */}
@@ -56,7 +54,7 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-accent" />
-                <span className="text-primary-foreground/80 text-sm">csac@university.edu</span>
+                <span className="text-primary-foreground/80 text-sm">csac@sreenidhi.edu.in</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-accent" />
@@ -88,8 +86,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
