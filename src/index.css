@@ -57,9 +57,15 @@
     --shadow-strong: 0 16px 40px -8px hsl(var(--primary) / 0.2);
     --shadow-accent: 0 8px 24px -4px hsl(var(--accent) / 0.2);
 
-    /* Professional animations */
-    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  /* Professional animations */
+  --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* Indian patriotic colors */
+  --saffron: 19 100% 55%;
+  --white: 0 0% 100%;
+  --green: 107 56% 31%;
+  --navy-blue: 221 100% 25%;
 
     --sidebar-background: 0 0% 98%;
 
@@ -166,6 +172,45 @@
     transition: var(--transition-smooth);
   }
 
+  /* Enhanced hover effects */
+  .hover-lift {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-strong);
+  }
+  
+  .hover-scale {
+    transition: var(--transition-bounce);
+  }
+  
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .hover-glow {
+    transition: var(--transition-smooth);
+  }
+  
+  .hover-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--accent) / 0.4);
+  }
+  
+  .patriotic-gradient {
+    background: linear-gradient(135deg, hsl(var(--saffron)), hsl(var(--white)), hsl(var(--green)));
+  }
+  
+  .tricolor-border {
+    border-top: 4px solid hsl(var(--saffron));
+    border-bottom: 4px solid hsl(var(--green));
+  }
+  
+  .flag-wave {
+    animation: flagWave 3s ease-in-out infinite;
+  }
+  
   /* Smooth animations */
   .animate-fade-in {
     animation: fadeIn 0.6s ease-out;
@@ -173,6 +218,10 @@
 
   .animate-slide-up {
     animation: slideUp 0.8s ease-out;
+  }
+  
+  .animate-pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
   }
 }
 
@@ -195,5 +244,26 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes flagWave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(var(--accent) / 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px hsl(var(--accent) / 0.6);
   }
 }

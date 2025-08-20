@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, GraduationCap } from "lucide-react";
+import { Menu, X, GraduationCap, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Navigation = () => {
@@ -16,11 +16,12 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-md border-b border-border sticky top-0 z-50">
+    <nav className="bg-white shadow-md border-b border-border sticky top-0 z-50 tricolor-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 hover-scale">
+            <Flag className="h-6 w-6 text-orange-500 flag-wave" />
             <GraduationCap className="h-8 w-8 text-primary" />
             <span className="font-serif text-xl font-semibold text-primary">
               CSAC
@@ -34,7 +35,7 @@ const Navigation = () => {
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) =>
-                  `px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  `px-3 py-2 text-sm font-medium transition-colors duration-200 hover-scale ${
                     isActive
                       ? "text-primary border-b-2 border-primary"
                       : "text-muted-foreground hover:text-primary"
@@ -48,7 +49,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-accent">
+            <Button className="btn-accent hover-glow">
               Join CSAC
             </Button>
           </div>
