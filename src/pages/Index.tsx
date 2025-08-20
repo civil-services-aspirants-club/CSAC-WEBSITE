@@ -2,56 +2,41 @@ import { Calendar, Users, BookOpen, ArrowRight, Award, Target, Flag, Heart, Star
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg.jpg";
-
 const Index = () => {
-  const upcomingEvents = [
-    {
-      date: "Dec 15",
-      title: "UPSC Mains Strategy Workshop",
-      time: "2:00 PM - 5:00 PM",
-      venue: "Auditorium A"
-    },
-    {
-      date: "Dec 20", 
-      title: "Mock Interview Session",
-      time: "10:00 AM - 4:00 PM",
-      venue: "Conference Room 1"
-    },
-    {
-      date: "Dec 25",
-      title: "Current Affairs Discussion",
-      time: "3:00 PM - 5:00 PM", 
-      venue: "Study Hall"
-    }
-  ];
-
-  const features = [
-    {
-      icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Expert Mentorship",
-      description: "Get guidance from experienced faculty and successful candidates"
-    },
-    {
-      icon: <BookOpen className="h-8 w-8 text-primary" />,
-      title: "Study Resources",
-      description: "Access comprehensive study materials and previous year papers"
-    },
-    {
-      icon: <Award className="h-8 w-8 text-primary" />,
-      title: "Mock Tests",
-      description: "Regular mock tests and practice sessions for better preparation"
-    }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const upcomingEvents = [{
+    date: "Dec 15",
+    title: "UPSC Mains Strategy Workshop",
+    time: "2:00 PM - 5:00 PM",
+    venue: "Auditorium A"
+  }, {
+    date: "Dec 20",
+    title: "Mock Interview Session",
+    time: "10:00 AM - 4:00 PM",
+    venue: "Conference Room 1"
+  }, {
+    date: "Dec 25",
+    title: "Current Affairs Discussion",
+    time: "3:00 PM - 5:00 PM",
+    venue: "Study Hall"
+  }];
+  const features = [{
+    icon: <Users className="h-8 w-8 text-primary" />,
+    title: "Expert Mentorship",
+    description: "Get guidance from experienced faculty and successful candidates"
+  }, {
+    icon: <BookOpen className="h-8 w-8 text-primary" />,
+    title: "Study Resources",
+    description: "Access comprehensive study materials and previous year papers"
+  }, {
+    icon: <Award className="h-8 w-8 text-primary" />,
+    title: "Mock Tests",
+    description: "Regular mock tests and practice sessions for better preparation"
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
-      <section 
-        className="relative min-h-screen flex items-center justify-center bg-cover bg-center tricolor-border"
-        style={{ 
-          backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url(${heroImage})` 
-        }}
-      >
+      <section className="relative min-h-screen flex items-center justify-center bg-cover bg-center tricolor-border" style={{
+      backgroundImage: `linear-gradient(rgba(30, 64, 175, 0.8), rgba(30, 64, 175, 0.9)), url(${heroImage})`
+    }}>
         <div className="absolute top-8 right-8 flag-wave">
           <Flag className="h-12 w-12 text-white" />
         </div>
@@ -66,9 +51,7 @@ const Index = () => {
           <h1 className="text-5xl md:text-7xl font-serif font-bold text-white mb-6 animate-fade-in">
             Civil Services Aspirants Club
           </h1>
-          <p className="text-2xl md:text-3xl text-white/90 mb-4 animate-slide-up">
-            Learn. Lead. Serve the Nation.
-          </p>
+          <p className="text-2xl md:text-3xl text-white/90 mb-4 animate-slide-up">Sheelam Param Bhushanam</p>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-8 animate-fade-in">
             🇮🇳 "सेवा परमो धर्मः" - Service is the highest virtue
           </p>
@@ -94,7 +77,7 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
             <div className="card-shadow p-6 rounded-lg bg-card hover-lift">
-              <div className="text-3xl font-bold text-primary mb-2">500+</div>
+              <div className="text-3xl font-bold text-primary mb-2">150+</div>
               <div className="text-muted-foreground">Active Members</div>
             </div>
             <div className="card-shadow p-6 rounded-lg bg-card hover-lift">
@@ -102,11 +85,11 @@ const Index = () => {
               <div className="text-muted-foreground">Events Conducted</div>
             </div>
             <div className="card-shadow p-6 rounded-lg bg-card hover-lift">
-              <div className="text-3xl font-bold text-primary mb-2">15+</div>
+              <div className="text-3xl font-bold text-primary mb-2">30+</div>
               <div className="text-muted-foreground">Successful Candidates</div>
             </div>
             <div className="card-shadow p-6 rounded-lg bg-card hover-lift">
-              <div className="text-3xl font-bold text-accent mb-2">5</div>
+              <div className="text-3xl font-bold text-accent mb-2">10</div>
               <div className="text-muted-foreground">Years of Excellence</div>
             </div>
           </div>
@@ -126,8 +109,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {upcomingEvents.map((event, index) => (
-              <Card key={index} className="card-shadow border-0 overflow-hidden hover-lift hover-glow">
+            {upcomingEvents.map((event, index) => <Card key={index} className="card-shadow border-0 overflow-hidden hover-lift hover-glow">
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-4">
                     <div className="bg-primary text-primary-foreground px-3 py-1 rounded-md text-sm font-medium">
@@ -146,8 +128,7 @@ const Index = () => {
                     Register Now
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="text-center">
@@ -172,8 +153,7 @@ const Index = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <Card key={index} className="card-shadow border-0 text-center hover-lift">
+            {features.map((feature, index) => <Card key={index} className="card-shadow border-0 text-center hover-lift">
                 <CardContent className="p-8">
                   <div className="flex justify-center mb-6 hover-scale">
                     {feature.icon}
@@ -185,8 +165,7 @@ const Index = () => {
                     {feature.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -249,8 +228,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
