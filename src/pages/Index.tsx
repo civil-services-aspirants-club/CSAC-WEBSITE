@@ -3,6 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg-new.jpg";
 const Index = () => {
+  // Replace this with your actual Google Form link
+  const registrationFormLink = "https://forms.google.com/your-form-link";
+  
   const upcomingEvents = [{
     date: "Dec 15",
     title: "UPSC Mains Strategy Workshop",
@@ -19,6 +22,10 @@ const Index = () => {
     time: "3:00 PM - 5:00 PM",
     venue: "Study Hall"
   }];
+
+  const handleRegistration = () => {
+    window.open(registrationFormLink, '_blank');
+  };
   const features = [{
     icon: <Users className="h-8 w-8 text-primary" />,
     title: "Expert Mentorship",
@@ -121,7 +128,10 @@ const Index = () => {
                   <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
                   <p className="text-gray-600 mb-2">{event.time}</p>
                   <p className="text-gray-600 mb-4">{event.venue}</p>
-                  <Button className="w-full hover:scale-105 transform transition-all duration-300">
+                  <Button 
+                    onClick={handleRegistration}
+                    className="w-full hover:scale-105 transform transition-all duration-300"
+                  >
                     Register Now
                   </Button>
                 </CardContent>
