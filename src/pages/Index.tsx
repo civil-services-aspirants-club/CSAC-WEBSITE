@@ -67,7 +67,7 @@ const Index = () => {
             <Button size="lg" className="hover:scale-105 transform transition-all duration-300 bg-saffron hover:bg-saffron/90 text-primary font-bold px-8 py-4">
               Join CSAC <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="outline" size="lg" className="hover:scale-105 transform transition-all duration-300 border-white text-white hover:bg-white hover:text-primary">
+            <Button variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
               Explore Resources
             </Button>
           </div>
@@ -165,7 +165,7 @@ const Index = () => {
               <Button size="lg" className="hover:scale-105 transform transition-all duration-300 bg-saffron hover:bg-saffron/90 text-primary font-bold">
                 Join CSAC Today
               </Button>
-              <Button variant="outline" size="lg" className="hover:scale-105 transform transition-all duration-300 border-white text-white hover:bg-white hover:text-primary">
+              <Button variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
                 Download Resources
               </Button>
             </div>
