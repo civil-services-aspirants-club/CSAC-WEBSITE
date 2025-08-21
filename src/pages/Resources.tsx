@@ -267,45 +267,6 @@ const Resources = () => {
           </Tabs>
         </div>
       </section>
-
-      {/* Quick Access Section */}
-      <section className="py-20 bg-primary">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-serif font-bold text-white mb-12">
-            Quick Resource Access
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
-              <div className="flex flex-col items-center">
-                <BookOpen className="h-6 w-6 mb-2" />
-                NCERT Books
-              </div>
-            </Button>
-            
-            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
-              <div className="flex flex-col items-center">
-                <FileText className="h-6 w-6 mb-2" />
-                Previous Papers
-              </div>
-            </Button>
-            
-            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
-              <div className="flex flex-col items-center">
-                <Video className="h-6 w-6 mb-2" />
-                Video Lectures
-              </div>
-            </Button>
-
-            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
-              <div className="flex flex-col items-center">
-                <Download className="h-6 w-6 mb-2" />
-                Download All
-              </div>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };

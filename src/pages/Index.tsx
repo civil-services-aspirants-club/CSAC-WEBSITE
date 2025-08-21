@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg-new.jpg";
 const Index = () => {
   // Replace these with your actual links
-  const registrationFormLink = "https://forms.google.com/your-form-link";
+  const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
   const googleDriveLink = "https://www.googledrive.com";
   
   const upcomingEvents = [{
@@ -173,6 +173,57 @@ const Index = () => {
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">What Our Members Say</h2>
+            <p className="text-xl text-gray-600">Success stories from our civil services aspirants</p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">A</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Ananya Sharma</h3>
+                <p className="text-primary font-semibold mb-4">IAS 2023 - AIR 47</p>
+                <p className="text-gray-600 italic">
+                  "CSAC provided me with the perfect environment and resources. The mock interviews and study materials were invaluable in my preparation journey."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">R</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Rajesh Kumar</h3>
+                <p className="text-primary font-semibold mb-4">IPS 2023 - AIR 89</p>
+                <p className="text-gray-600 italic">
+                  "The mentorship and guidance from CSAC faculty helped me clear all three stages. The community support was exceptional throughout my preparation."
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-2xl font-bold text-white">P</span>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-2">Priya Verma</h3>
+                <p className="text-primary font-semibold mb-4">IFS 2022 - AIR 156</p>
+                <p className="text-gray-600 italic">
+                  "CSAC's comprehensive approach and regular current affairs sessions made the difference. I'm grateful for the structured preparation methodology."
+                </p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>

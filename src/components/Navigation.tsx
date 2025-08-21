@@ -4,7 +4,7 @@ import { Menu, X, GraduationCap, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const registrationFormLink = "https://forms.google.com/your-form-link";
+  const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
 
   const handleJoinCSAC = () => {
     window.open(registrationFormLink, '_blank');
