@@ -4,6 +4,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const Resources = () => {
+  const googleDriveLink = "https://www.googledrive.com";
+
+  const handleDownload = () => {
+    window.open(googleDriveLink, '_blank');
+  };
   const studyMaterials = [
     {
       category: "NCERT Books",
@@ -126,7 +131,7 @@ const Resources = () => {
                               <div className="font-medium text-sm">{item.name}</div>
                               <div className="text-xs text-muted-foreground">{item.type} • {item.size}</div>
                             </div>
-                            <Button size="sm" variant="outline" className="ml-2">
+                            <Button onClick={handleDownload} size="sm" variant="outline" className="ml-2">
                               <Download className="h-4 w-4" />
                             </Button>
                           </div>
@@ -191,7 +196,7 @@ const Resources = () => {
                             {content.type} • {content.duration || content.pages}
                           </div>
                           <p className="text-sm text-muted-foreground mb-4">{content.description}</p>
-                          <Button size="sm" className="btn-professional">
+                          <Button onClick={handleDownload} size="sm" className="btn-professional">
                             {content.type === 'Video' ? 'Watch Now' : 'Download'}
                           </Button>
                         </div>
@@ -212,7 +217,7 @@ const Resources = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Complete NCERT Package</h3>
                     <p className="text-muted-foreground mb-4">All NCERT books from Class 6-12</p>
-                    <Button className="btn-professional w-full">
+                    <Button onClick={handleDownload} className="btn-professional w-full">
                       Download (2.1 GB)
                     </Button>
                   </CardContent>
@@ -225,7 +230,7 @@ const Resources = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Previous Years Collection</h3>
                     <p className="text-muted-foreground mb-4">UPSC papers from 2010-2023</p>
-                    <Button className="btn-accent w-full">
+                    <Button onClick={handleDownload} className="btn-accent w-full">
                       Download (456 MB)
                     </Button>
                   </CardContent>
@@ -238,7 +243,7 @@ const Resources = () => {
                     </div>
                     <h3 className="text-lg font-semibold mb-2">Current Affairs Notes</h3>
                     <p className="text-muted-foreground mb-4">Monthly compiled notes</p>
-                    <Button className="btn-professional w-full">
+                    <Button onClick={handleDownload} className="btn-professional w-full">
                       Download (189 MB)
                     </Button>
                   </CardContent>
@@ -271,28 +276,28 @@ const Resources = () => {
           </h2>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
+            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
               <div className="flex flex-col items-center">
                 <BookOpen className="h-6 w-6 mb-2" />
                 NCERT Books
               </div>
             </Button>
             
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
+            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
               <div className="flex flex-col items-center">
                 <FileText className="h-6 w-6 mb-2" />
                 Previous Papers
               </div>
             </Button>
             
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
+            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
               <div className="flex flex-col items-center">
                 <Video className="h-6 w-6 mb-2" />
                 Video Lectures
               </div>
             </Button>
 
-            <Button size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
+            <Button onClick={handleDownload} size="lg" className="bg-white text-primary hover:bg-white/90 h-24">
               <div className="flex flex-col items-center">
                 <Download className="h-6 w-6 mb-2" />
                 Download All

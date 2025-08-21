@@ -4,6 +4,11 @@ import { Menu, X, GraduationCap, Flag } from "lucide-react";
 import { Button } from "@/components/ui/button";
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const registrationFormLink = "https://forms.google.com/your-form-link";
+
+  const handleJoinCSAC = () => {
+    window.open(registrationFormLink, '_blank');
+  };
   const navItems = [{
     name: "Home",
     path: "/"
@@ -46,7 +51,7 @@ const Navigation = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <Button className="btn-accent hover-glow">
+            <Button onClick={handleJoinCSAC} className="btn-accent hover-glow">
               Join CSAC
             </Button>
           </div>
@@ -68,7 +73,7 @@ const Navigation = () => {
                   {item.name}
                 </NavLink>)}
               <div className="px-3 py-2">
-                <Button className="btn-accent w-full">
+                <Button onClick={handleJoinCSAC} className="btn-accent w-full">
                   Join CSAC
                 </Button>
               </div>

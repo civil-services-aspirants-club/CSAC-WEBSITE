@@ -5,7 +5,7 @@ import heroImage from "@/assets/hero-bg-new.jpg";
 const Index = () => {
   // Replace these with your actual links
   const registrationFormLink = "https://forms.google.com/your-form-link";
-  const googleDriveLink = "https://drive.google.com/your-drive-link";
+  const googleDriveLink = "https://www.googledrive.com";
   
   const upcomingEvents = [{
     date: "Dec 15",
