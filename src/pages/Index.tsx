@@ -3,8 +3,9 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg-new.jpg";
 const Index = () => {
-  // Replace this with your actual Google Form link
+  // Replace these with your actual links
   const registrationFormLink = "https://forms.google.com/your-form-link";
+  const googleDriveLink = "https://drive.google.com/your-drive-link";
   
   const upcomingEvents = [{
     date: "Dec 15",
@@ -25,6 +26,10 @@ const Index = () => {
 
   const handleRegistration = () => {
     window.open(registrationFormLink, '_blank');
+  };
+
+  const handleDownloadResources = () => {
+    window.open(googleDriveLink, '_blank');
   };
   const features = [{
     icon: <Users className="h-8 w-8 text-primary" />,
@@ -71,10 +76,19 @@ const Index = () => {
             Learn. Lead. Serve the Nation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-4 shadow-lg hover:shadow-xl border-0">
+            <Button 
+              onClick={handleRegistration}
+              size="lg" 
+              className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-4 shadow-lg hover:shadow-xl border-0"
+            >
               Join CSAC <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
+            <Button 
+              onClick={handleDownloadResources}
+              variant="secondary" 
+              size="lg" 
+              className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl"
+            >
               Explore Resources
             </Button>
           </div>
@@ -172,10 +186,19 @@ const Index = () => {
               Join thousands of aspirants who are preparing for civil services with CSAC
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold shadow-lg hover:shadow-xl border-0">
+              <Button 
+                onClick={handleRegistration}
+                size="lg" 
+                className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold shadow-lg hover:shadow-xl border-0"
+              >
                 Join CSAC Today
               </Button>
-              <Button variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
+              <Button 
+                onClick={handleDownloadResources}
+                variant="secondary" 
+                size="lg" 
+                className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl"
+              >
                 Download Resources
               </Button>
             </div>
