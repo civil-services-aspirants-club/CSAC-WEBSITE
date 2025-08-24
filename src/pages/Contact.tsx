@@ -1,55 +1,7 @@
-import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send, Users, MessageCircle, Heart, Flag } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    college: "",
-    department: "",
-    year: "",
-    message: "",
-    interests: [] as string[]
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // Handle form submission here
-  };
-
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const interests = [
-    "UPSC Preparation",
-    "State PSC",
-    "Group Discussions",
-    "Mock Interviews",
-    "Current Affairs",
-    "Optional Subjects",
-    "Essay Writing",
-    "Mentorship"
-  ];
-
-  const toggleInterest = (interest: string) => {
-    setFormData({
-      ...formData,
-      interests: formData.interests.includes(interest)
-        ? formData.interests.filter(i => i !== interest)
-        : [...formData.interests, interest]
-    });
-  };
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       {/* Hero Section */}
@@ -179,146 +131,129 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Join Us Form */}
-          <Card className="shadow-xl hover-glow">
-            <CardHeader>
-              <CardTitle className="text-2xl patriotic-gradient">Join CSAC Today</CardTitle>
-              <p className="text-muted-foreground">
-                Fill out this form to become a member of our civil services preparation community.
-              </p>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Quick Access Links */}
+          <div className="space-y-8">
+            <Card className="shadow-xl hover-glow">
+              <CardHeader>
+                <CardTitle className="text-2xl patriotic-gradient">Quick Links</CardTitle>
+                <p className="text-muted-foreground">
+                  Access important resources and join our community with one click
+                </p>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 gap-4">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScVWJBqsC01mOz5kfTqNgQu4V4LOQUqPIXOGXD-vWQj1FsNLg/viewform"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Card className="hover-scale hover-glow transition-all duration-300 border-primary/20">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                              <Users className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground text-lg">Join CSAC</h3>
+                              <p className="text-sm text-muted-foreground">Fill out our membership form</p>
+                            </div>
+                          </div>
+                          <Send className="h-5 w-5 text-primary" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </a>
+
+                  <a
+                    href="https://www.googledrive.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Card className="hover-scale hover-glow transition-all duration-300 border-accent/20">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
+                              <Heart className="h-6 w-6 text-accent" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground text-lg">Study Resources</h3>
+                              <p className="text-sm text-muted-foreground">Access our resource library</p>
+                            </div>
+                          </div>
+                          <Send className="h-5 w-5 text-accent" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </a>
+
+                  <Card className="hover-scale hover-glow transition-all duration-300 border-secondary/20">
+                    <CardContent className="p-6">
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center space-x-4">
+                          <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                            <MessageCircle className="h-6 w-6 text-secondary" />
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-foreground text-lg">WhatsApp Community</h3>
+                            <p className="text-sm text-muted-foreground">Join our discussion group</p>
+                          </div>
+                        </div>
+                        <Send className="h-5 w-5 text-secondary" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Why Join CSAC */}
+            <Card className="shadow-xl hover-glow">
+              <CardHeader>
+                <CardTitle className="text-2xl patriotic-gradient">Why Join CSAC?</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Full Name *
-                    </label>
-                    <Input
-                      name="name"
-                      value={formData.name}
-                      onChange={handleInputChange}
-                      placeholder="Enter your full name"
-                      required
-                      className="hover:border-primary transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Email *
-                    </label>
-                    <Input
-                      name="email"
-                      type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
-                      placeholder="your.email@example.com"
-                      required
-                      className="hover:border-primary transition-colors"
-                    />
+                    <h4 className="font-semibold text-foreground">Expert Mentorship</h4>
+                    <p className="text-sm text-muted-foreground">Get guidance from successful civil servants and experienced mentors</p>
                   </div>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Phone Number
-                    </label>
-                    <Input
-                      name="phone"
-                      value={formData.phone}
-                      onChange={handleInputChange}
-                      placeholder="+91 98765 43210"
-                      className="hover:border-primary transition-colors"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Year of Study
-                    </label>
-                    <Input
-                      name="year"
-                      value={formData.year}
-                      onChange={handleInputChange}
-                      placeholder="e.g., 2nd Year, Final Year"
-                      className="hover:border-primary transition-colors"
-                    />
+                    <h4 className="font-semibold text-foreground">Comprehensive Study Material</h4>
+                    <p className="text-sm text-muted-foreground">Access curated resources, previous year papers, and current affairs updates</p>
                   </div>
                 </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      College/Institution
-                    </label>
-                    <Input
-                      name="college"
-                      value={formData.college}
-                      onChange={handleInputChange}
-                      placeholder="Your college name"
-                      className="hover:border-primary transition-colors"
-                    />
+                    <h4 className="font-semibold text-foreground">Mock Interviews & Tests</h4>
+                    <p className="text-sm text-muted-foreground">Regular practice sessions to boost your confidence and performance</p>
                   </div>
+                </div>
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <label className="block text-sm font-medium text-foreground mb-2">
-                      Department/Branch
-                    </label>
-                    <Input
-                      name="department"
-                      value={formData.department}
-                      onChange={handleInputChange}
-                      placeholder="e.g., CSE, ECE, Mechanical"
-                      className="hover:border-primary transition-colors"
-                    />
+                    <h4 className="font-semibold text-foreground">Peer Learning</h4>
+                    <p className="text-sm text-muted-foreground">Study with motivated peers and participate in group discussions</p>
                   </div>
                 </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-3">
-                    Areas of Interest
-                  </label>
-                  <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-                    {interests.map((interest) => (
-                      <button
-                        key={interest}
-                        type="button"
-                        onClick={() => toggleInterest(interest)}
-                        className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 hover-scale ${
-                          formData.interests.includes(interest)
-                            ? "bg-primary text-primary-foreground shadow-md hover-glow"
-                            : "bg-secondary text-secondary-foreground hover:bg-accent hover:text-accent-foreground"
-                        }`}
-                      >
-                        {interest}
-                      </button>
-                    ))}
+                <div className="flex items-start space-x-3">
+                  <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
+                  <div>
+                    <h4 className="font-semibold text-foreground">Regular Workshops</h4>
+                    <p className="text-sm text-muted-foreground">Attend sessions on answer writing, personality development, and more</p>
                   </div>
                 </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-foreground mb-2">
-                    Message (Optional)
-                  </label>
-                  <Textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleInputChange}
-                    placeholder="Tell us about your goals, expectations, or any questions you have..."
-                    className="min-h-[100px] hover:border-primary transition-colors"
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full patriotic-gradient hover:scale-105 transition-all duration-300 hover-glow"
-                  size="lg"
-                >
-                  <Send className="h-5 w-5 mr-2" />
-                  Join CSAC Community
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+          </div>
         </div>
       </div>
     </div>

@@ -1,61 +1,6 @@
-import { useState } from "react";
-import { Camera, Play, Calendar, Users, Award, BookOpen, X } from "lucide-react";
+import { Camera, Users, Award } from "lucide-react";
 
 const Gallery = () => {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  const events = [
-    {
-      id: 1,
-      title: "UPSC Topper Interaction Session",
-      date: "March 2024",
-      image: "/api/placeholder/400/300",
-      category: "Guest Lecture"
-    },
-    {
-      id: 2,
-      title: "Mock Interview Practice",
-      date: "February 2024",
-      image: "/api/placeholder/400/300",
-      category: "Practice Session"
-    },
-    {
-      id: 3,
-      title: "Current Affairs Discussion",
-      date: "January 2024",
-      image: "/api/placeholder/400/300",
-      category: "Study Circle"
-    },
-    {
-      id: 4,
-      title: "Independence Day Celebration",
-      date: "August 2024",
-      image: "/api/placeholder/400/300",
-      category: "Special Event"
-    },
-    {
-      id: 5,
-      title: "Essay Writing Workshop",
-      date: "December 2023",
-      image: "/api/placeholder/400/300",
-      category: "Workshop"
-    },
-    {
-      id: 6,
-      title: "Group Study Session",
-      date: "November 2023",
-      image: "/api/placeholder/400/300",
-      category: "Study Session"
-    }
-  ];
-
-  const categories = ["All", "Guest Lecture", "Workshop", "Study Circle", "Practice Session", "Special Event"];
-  const [activeCategory, setActiveCategory] = useState("All");
-
-  const filteredEvents = activeCategory === "All" 
-    ? events 
-    : events.filter(event => event.category === activeCategory);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       {/* Hero Section */}
@@ -78,10 +23,6 @@ const Gallery = () => {
                 <span>100+ Members</span>
               </div>
               <div className="flex items-center space-x-2">
-                <Calendar className="h-5 w-5 text-accent" />
-                <span>50+ Events</span>
-              </div>
-              <div className="flex items-center space-x-2">
                 <Award className="h-5 w-5 text-accent" />
                 <span>Memorable Moments</span>
               </div>
@@ -90,79 +31,24 @@ const Gallery = () => {
         </div>
       </section>
 
-      {/* Filter Categories */}
-      <section className="py-12">
+      {/* Gallery Section - Ready for direct photos */}
+      <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4 mb-12">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 hover-scale ${
-                  activeCategory === category
-                    ? "bg-primary text-primary-foreground shadow-lg hover-glow"
-                    : "bg-card border border-border text-foreground hover:bg-accent hover:text-accent-foreground"
-                }`}
-              >
-                {category}
-              </button>
-            ))}
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-foreground mb-4">
+              Our Journey in Pictures
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              Gallery section ready for your photos
+            </p>
           </div>
-
-          {/* Photo Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {filteredEvents.map((event) => (
-              <div
-                key={event.id}
-                className="group cursor-pointer hover-scale"
-                onClick={() => setSelectedImage(event.image)}
-              >
-                <div className="relative overflow-hidden rounded-xl bg-card shadow-lg hover:shadow-xl transition-all duration-300 hover-glow">
-                  <div className="aspect-[4/3] bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
-                    <div className="text-center p-8">
-                      <BookOpen className="h-16 w-16 text-primary mx-auto mb-4" />
-                      <h3 className="text-lg font-semibold text-foreground mb-2">{event.title}</h3>
-                      <p className="text-muted-foreground">{event.date}</p>
-                    </div>
-                  </div>
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                    <div className="p-6 text-white">
-                      <h3 className="text-lg font-semibold mb-1">{event.title}</h3>
-                      <p className="text-sm opacity-90">{event.category}</p>
-                      <p className="text-xs opacity-75">{event.date}</p>
-                    </div>
-                  </div>
-                  <div className="absolute top-4 right-4 bg-accent text-accent-foreground px-3 py-1 rounded-full text-xs font-medium">
-                    {event.category}
-                  </div>
-                </div>
-              </div>
-            ))}
+          
+          {/* Photo Grid - Ready for direct image uploads */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Photos will be added directly here */}
           </div>
         </div>
       </section>
-
-      {/* Lightbox Modal */}
-      {selectedImage && (
-        <div 
-          className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
-          onClick={() => setSelectedImage(null)}
-        >
-          <div className="relative max-w-4xl max-h-full">
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute -top-12 right-0 text-white hover:text-accent transition-colors"
-            >
-              <X className="h-8 w-8" />
-            </button>
-            <img
-              src={selectedImage}
-              alt="Gallery item"
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
-          </div>
-        </div>
-      )}
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-primary via-primary-light to-accent">
