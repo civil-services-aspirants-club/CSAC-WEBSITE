@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Clock, Send, Users, MessageCircle, Heart, Flag } from "lucide-react";
+import { Mail, Phone, MapPin, Clock, Send, Users, MessageCircle, Heart } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Contact = () => {
@@ -9,12 +9,10 @@ const Contact = () => {
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary-light to-accent opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
-            <div className="flex justify-center mb-6 space-x-4">
-              <Flag className="h-12 w-12 text-accent flag-wave" />
+            <div className="flex justify-center mb-6">
               <MessageCircle className="h-16 w-16 text-accent animate-pulse" />
-              <Heart className="h-12 w-12 text-red-400 animate-pulse" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 patriotic-gradient">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
               Join CSAC Family
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
@@ -135,7 +133,7 @@ const Contact = () => {
           <div className="space-y-8">
             <Card className="shadow-xl hover-glow">
               <CardHeader>
-                <CardTitle className="text-2xl patriotic-gradient">Quick Links</CardTitle>
+                <CardTitle className="text-2xl text-foreground">Quick Links</CardTitle>
                 <p className="text-muted-foreground">
                   Access important resources and join our community with one click
                 </p>
@@ -213,7 +211,7 @@ const Contact = () => {
             {/* Why Join CSAC */}
             <Card className="shadow-xl hover-glow">
               <CardHeader>
-                <CardTitle className="text-2xl patriotic-gradient">Why Join CSAC?</CardTitle>
+                <CardTitle className="text-2xl text-foreground">Why Join CSAC?</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">

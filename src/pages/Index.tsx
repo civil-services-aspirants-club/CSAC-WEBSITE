@@ -1,4 +1,4 @@
-import { Calendar, Users, BookOpen, ArrowRight, Award, Target, Flag, Heart, Star } from "lucide-react";
+import { Calendar, Users, BookOpen, ArrowRight, Award, Target, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg-new.jpg";
@@ -53,14 +53,6 @@ const Index = () => {
           style={{ backgroundImage: `url(${heroImage})` }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80" />
-        
-        {/* Patriotic Elements */}
-        <div className="absolute top-10 left-10 opacity-20">
-          <Flag className="h-20 w-20 text-saffron animate-wave" />
-        </div>
-        <div className="absolute bottom-10 right-10 opacity-20">
-          <Heart className="h-16 w-16 text-green animate-pulse" />
-        </div>
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
           <div className="flex items-center justify-center mb-6">

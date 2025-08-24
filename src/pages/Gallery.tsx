@@ -11,7 +11,7 @@ const Gallery = () => {
             <div className="flex justify-center mb-6">
               <Camera className="h-16 w-16 text-accent animate-pulse" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 patriotic-gradient">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary-foreground">
               Photo Gallery
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
