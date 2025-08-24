@@ -177,45 +177,117 @@ const Index = () => {
             <p className="text-xl text-gray-600">Success stories from our civil services aspirants</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">A</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Ananya Sharma</h3>
-                <p className="text-primary font-semibold mb-4">IAS 2023 - AIR 47</p>
-                <p className="text-gray-600 italic">
-                  "CSAC provided me with the perfect environment and resources. The mock interviews and study materials were invaluable in my preparation journey."
-                </p>
-              </CardContent>
-            </Card>
+          {/* Horizontal Scrolling Container */}
+          <div className="relative overflow-hidden">
+            <div className="flex gap-6 overflow-x-auto scroll-smooth pb-4 snap-x snap-mandatory" 
+                 style={{ scrollbarWidth: 'thin', scrollbarColor: 'hsl(var(--primary) / 0.3) transparent' }}>
+              
+              {/* Testimonial 1 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">A</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Ananya Sharma</h3>
+                    <p className="text-primary font-semibold mb-4">IAS 2023 - AIR 47</p>
+                    <p className="text-gray-600 italic">
+                      "CSAC provided me with the perfect environment and resources. The mock interviews and study materials were invaluable in my preparation journey."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
 
-            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">R</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Rajesh Kumar</h3>
-                <p className="text-primary font-semibold mb-4">IPS 2023 - AIR 89</p>
-                <p className="text-gray-600 italic">
-                  "The mentorship and guidance from CSAC faculty helped me clear all three stages. The community support was exceptional throughout my preparation."
-                </p>
-              </CardContent>
-            </Card>
+              {/* Testimonial 2 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">R</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Rajesh Kumar</h3>
+                    <p className="text-primary font-semibold mb-4">IPS 2023 - AIR 89</p>
+                    <p className="text-gray-600 italic">
+                      "The mentorship and guidance from CSAC faculty helped me clear all three stages. The community support was exceptional throughout my preparation."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
 
-            <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white">
-              <CardContent className="p-8 text-center">
-                <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-2xl font-bold text-white">P</span>
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-2">Priya Verma</h3>
-                <p className="text-primary font-semibold mb-4">IFS 2022 - AIR 156</p>
-                <p className="text-gray-600 italic">
-                  "CSAC's comprehensive approach and regular current affairs sessions made the difference. I'm grateful for the structured preparation methodology."
-                </p>
-              </CardContent>
-            </Card>
+              {/* Testimonial 3 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">P</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Priya Verma</h3>
+                    <p className="text-primary font-semibold mb-4">IFS 2022 - AIR 156</p>
+                    <p className="text-gray-600 italic">
+                      "CSAC's comprehensive approach and regular current affairs sessions made the difference. I'm grateful for the structured preparation methodology."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Testimonial 4 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">V</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Vikram Singh</h3>
+                    <p className="text-primary font-semibold mb-4">IRS 2023 - AIR 124</p>
+                    <p className="text-gray-600 italic">
+                      "The test series and answer writing practice at CSAC were game-changers. The detailed feedback helped me improve my presentation skills significantly."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Testimonial 5 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">S</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Sneha Patel</h3>
+                    <p className="text-primary font-semibold mb-4">IAS 2022 - AIR 73</p>
+                    <p className="text-gray-600 italic">
+                      "CSAC's focus on conceptual clarity and regular doubt-clearing sessions helped me tackle the most challenging questions with confidence."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Testimonial 6 */}
+              <div className="min-w-[350px] snap-center">
+                <Card className="hover:shadow-xl transform transition-all duration-300 border-0 bg-white h-full hover-scale">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                      <span className="text-2xl font-bold text-white">M</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">Mohammed Ali</h3>
+                    <p className="text-primary font-semibold mb-4">IFS 2023 - AIR 201</p>
+                    <p className="text-gray-600 italic">
+                      "The personalized attention and strategic guidance at CSAC helped me overcome my weaknesses. The peer group discussions were incredibly valuable."
+                    </p>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+            
+            {/* Scroll Indicators */}
+            <div className="flex justify-center mt-6 gap-2">
+              <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+              <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+              <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+              <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+              <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+              <div className="w-2 h-2 bg-primary/50 rounded-full"></div>
+            </div>
           </div>
         </div>
       </section>
