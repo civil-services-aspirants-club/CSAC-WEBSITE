@@ -98,7 +98,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
             <div className="hover:scale-110 transform transition-all duration-300">
               <Users className="h-12 w-12 mx-auto mb-4 text-saffron" />
-              <h3 className="text-3xl font-bold">500+</h3>
+              <h3 className="text-3xl font-bold">600+</h3>
               <p className="text-lg opacity-90">Active Members</p>
             </div>
             <div className="hover:scale-110 transform transition-all duration-300">
