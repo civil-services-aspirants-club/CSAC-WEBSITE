@@ -203,16 +203,19 @@ const Index = () => {
                         className="text-xl font-bold text-gray-900 mb-2 bg-transparent border-b"
                         value={event.title}
                         onChange={(e) => handleSaveEvent(index, 'title', e.target.value)}
+                        placeholder="Enter event title"
                       />
                       <Input
                         className="text-gray-600 mb-2 bg-transparent border-b"
                         value={event.time}
                         onChange={(e) => handleSaveEvent(index, 'time', e.target.value)}
+                        placeholder="Enter time"
                       />
                       <Input
                         className="text-gray-600 mb-4 bg-transparent border-b"
                         value={event.venue}
                         onChange={(e) => handleSaveEvent(index, 'venue', e.target.value)}
+                        placeholder="Enter venue"
                       />
                     </>
                   ) : (
