@@ -1,13 +1,18 @@
-import { GraduationCap, Mail, Phone, MapPin, Instagram, Linkedin, MessageCircle, Flag, Heart } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin, MessageCircle, Heart } from "lucide-react";
+import csacLogo from "@/assets/csac-logo.png";
+
 const Footer = () => {
   return <footer className="bg-primary text-primary-foreground tricolor-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Mission */}
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4 hover-scale">
-              <Flag className="h-6 w-6 text-orange-400 flag-wave" />
-              <GraduationCap className="h-8 w-8" />
+            <div className="flex items-center space-x-3 mb-4 hover-scale">
+              <img 
+                src={csacLogo} 
+                alt="CSAC Logo" 
+                className="h-14 w-14 object-contain"
+              />
               <span className="font-serif text-xl font-semibold">
                 Civil Services Aspirants Club
               </span>

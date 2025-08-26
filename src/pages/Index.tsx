@@ -1,7 +1,8 @@
-import { Calendar, Users, BookOpen, ArrowRight, Award, Target, Star } from "lucide-react";
+import { Calendar, Users, BookOpen, ArrowRight, Award, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import heroImage from "@/assets/hero-bg-new.jpg";
+import csacLogo from "@/assets/csac-logo.png";
 const Index = () => {
   // Replace these with your actual links
   const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
@@ -55,8 +56,12 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80" />
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
-          <div className="flex items-center justify-center mb-6">
-            <Target className="h-12 w-12 text-saffron mr-4 animate-bounce" />
+          <div className="flex flex-col items-center justify-center mb-6">
+            <img 
+              src={csacLogo} 
+              alt="CSAC Logo" 
+              className="h-32 w-32 object-contain mb-6 animate-fade-in"
+            />
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-text">
               Civil Services
             </h1>

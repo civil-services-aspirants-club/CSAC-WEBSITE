@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Menu, X, GraduationCap, Flag } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import csacLogo from "@/assets/csac-logo.png";
+
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
@@ -32,9 +34,12 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex items-center space-x-2 hover-scale">
-            
-            <GraduationCap className="h-8 w-8 text-primary" />
+          <div className="flex items-center space-x-3 hover-scale">
+            <img 
+              src={csacLogo} 
+              alt="CSAC Logo" 
+              className="h-12 w-12 object-contain"
+            />
             <span className="font-serif text-xl font-semibold text-primary">
               CSAC
             </span>
