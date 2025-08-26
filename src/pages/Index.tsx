@@ -6,12 +6,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import heroImage from "@/assets/hero-bg-new.jpg";
 import csacLogo from "@/assets/csac-logo.png";
-
 const Index = () => {
   // Replace these with your actual links
   const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
   const googleDriveLink = "https://www.googledrive.com";
-  
   const [editingEvent, setEditingEvent] = useState<number | null>(null);
   const [upcomingEvents, setUpcomingEvents] = useState([{
     date: "Dec 15",
@@ -29,25 +27,23 @@ const Index = () => {
     time: "3:00 PM - 5:00 PM",
     venue: "Study Hall"
   }]);
-
   const handleRegistration = () => {
     window.open(registrationFormLink, '_blank');
   };
-
   const handleDownloadResources = () => {
     window.open(googleDriveLink, '_blank');
   };
-
   const handleEditEvent = (index: number) => {
     setEditingEvent(index);
   };
-
   const handleSaveEvent = (index: number, field: string, value: string) => {
     const updatedEvents = [...upcomingEvents];
-    updatedEvents[index] = { ...updatedEvents[index], [field]: value };
+    updatedEvents[index] = {
+      ...updatedEvents[index],
+      [field]: value
+    };
     setUpcomingEvents(updatedEvents);
   };
-
   const handleCancelEdit = () => {
     setEditingEvent(null);
   };
@@ -64,23 +60,17 @@ const Index = () => {
     title: "Mock Tests",
     description: "Regular mock tests and practice sessions for better preparation"
   }];
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-br from-primary/90 via-primary/70 to-secondary/80" />
         
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-6">
           <div className="flex flex-col items-center justify-center mb-6">
-            <img 
-              src={csacLogo} 
-              alt="CSAC Logo" 
-              className="h-32 w-32 object-contain mb-6 animate-fade-in"
-            />
+            <img src={csacLogo} alt="CSAC Logo" className="h-32 w-32 object-contain mb-6 animate-fade-in" />
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight hero-text">
               Civil Services
             </h1>
@@ -92,19 +82,10 @@ const Index = () => {
             Learn. Lead. Serve the Nation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              onClick={handleRegistration}
-              size="lg" 
-              className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-4 shadow-lg hover:shadow-xl border-0"
-            >
+            <Button onClick={handleRegistration} size="lg" className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold px-8 py-4 shadow-lg hover:shadow-xl border-0">
               Join CSAC <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button 
-              onClick={handleDownloadResources}
-              variant="secondary" 
-              size="lg" 
-              className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl"
-            >
+            <Button onClick={handleDownloadResources} variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
               Explore Resources
             </Button>
           </div>
@@ -148,94 +129,31 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            {upcomingEvents.map((event, index) => (
-              <Card key={index} className="hover:shadow-xl transform transition-all duration-300 border-l-4 border-l-primary relative">
+            {upcomingEvents.map((event, index) => <Card key={index} className="hover:shadow-xl transform transition-all duration-300 border-l-4 border-l-primary relative">
                 <CardContent className="p-6">
                   {/* Edit Button */}
-                  <div className="absolute top-2 right-2">
-                    {editingEvent === index ? (
-                      <div className="flex gap-2">
-                        <Button
-                          size="sm"
-                          variant="destructive"
-                          onClick={handleCancelEdit}
-                          className="px-2 py-1"
-                        >
-                          <X className="h-4 w-4 mr-1" /> Cancel
-                        </Button>
-                        <Button
-                          size="sm"
-                          variant="default"
-                          onClick={() => setEditingEvent(null)}
-                          className="px-2 py-1 bg-green text-white hover:bg-green/90"
-                        >
-                          <Save className="h-4 w-4 mr-1" /> Save
-                        </Button>
-                      </div>
-                    ) : (
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        onClick={() => handleEditEvent(index)}
-                        className="px-2 py-1 hover:bg-primary hover:text-white transition-colors"
-                      >
-                        <Edit2 className="h-4 w-4 mr-1" /> Edit
-                      </Button>
-                    )}
-                  </div>
+                  
 
                   <div className="flex items-center mb-4">
                     <Calendar className="h-6 w-6 text-primary mr-3" />
-                    {editingEvent === index ? (
-                      <Input
-                        className="text-lg font-semibold text-primary bg-transparent border-b border-primary"
-                        value={event.date}
-                        onChange={(e) => handleSaveEvent(index, 'date', e.target.value)}
-                      />
-                    ) : (
-                      <span className="text-lg font-semibold text-primary">{event.date}</span>
-                    )}
+                    {editingEvent === index ? <Input className="text-lg font-semibold text-primary bg-transparent border-b border-primary" value={event.date} onChange={e => handleSaveEvent(index, 'date', e.target.value)} /> : <span className="text-lg font-semibold text-primary">{event.date}</span>}
                   </div>
                   
-                  {editingEvent === index ? (
-                    <>
-                      <Input
-                        className="text-xl font-bold text-gray-900 mb-2 bg-transparent border-b"
-                        value={event.title}
-                        onChange={(e) => handleSaveEvent(index, 'title', e.target.value)}
-                        placeholder="Enter event title"
-                      />
-                      <Input
-                        className="text-gray-600 mb-2 bg-transparent border-b"
-                        value={event.time}
-                        onChange={(e) => handleSaveEvent(index, 'time', e.target.value)}
-                        placeholder="Enter time"
-                      />
-                      <Input
-                        className="text-gray-600 mb-4 bg-transparent border-b"
-                        value={event.venue}
-                        onChange={(e) => handleSaveEvent(index, 'venue', e.target.value)}
-                        placeholder="Enter venue"
-                      />
-                    </>
-                  ) : (
-                    <>
+                  {editingEvent === index ? <>
+                      <Input className="text-xl font-bold text-gray-900 mb-2 bg-transparent border-b" value={event.title} onChange={e => handleSaveEvent(index, 'title', e.target.value)} placeholder="Enter event title" />
+                      <Input className="text-gray-600 mb-2 bg-transparent border-b" value={event.time} onChange={e => handleSaveEvent(index, 'time', e.target.value)} placeholder="Enter time" />
+                      <Input className="text-gray-600 mb-4 bg-transparent border-b" value={event.venue} onChange={e => handleSaveEvent(index, 'venue', e.target.value)} placeholder="Enter venue" />
+                    </> : <>
                       <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
                       <p className="text-gray-600 mb-2">{event.time}</p>
                       <p className="text-gray-600 mb-4">{event.venue}</p>
-                    </>
-                  )}
+                    </>}
                   
-                  <Button 
-                    onClick={handleRegistration}
-                    className="w-full hover:scale-105 transform transition-all duration-300"
-                    disabled={editingEvent === index}
-                  >
+                  <Button onClick={handleRegistration} className="w-full hover:scale-105 transform transition-all duration-300" disabled={editingEvent === index}>
                     Register Now
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -249,15 +167,13 @@ const Index = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="text-center p-8 rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-300 group">
+            {features.map((feature, index) => <div key={index} className="text-center p-8 rounded-lg hover:shadow-lg hover:scale-105 transform transition-all duration-300 group">
                 <div className="mb-6 group-hover:scale-110 transform transition-all duration-300">
                   {feature.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{feature.title}</h3>
                 <p className="text-gray-600 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -272,8 +188,10 @@ const Index = () => {
           
           {/* Horizontal Scrolling Container */}
           <div className="relative overflow-hidden">
-            <div className="flex gap-6 overflow-x-auto scroll-smooth pb-4 snap-x snap-mandatory" 
-                 style={{ scrollbarWidth: 'thin', scrollbarColor: 'hsl(var(--primary) / 0.3) transparent' }}>
+            <div className="flex gap-6 overflow-x-auto scroll-smooth pb-4 snap-x snap-mandatory" style={{
+            scrollbarWidth: 'thin',
+            scrollbarColor: 'hsl(var(--primary) / 0.3) transparent'
+          }}>
               
               {/* Testimonial 1 */}
               <div className="min-w-[350px] snap-center">
@@ -394,26 +312,16 @@ const Index = () => {
               Join thousands of aspirants who are preparing for civil services with CSAC
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                onClick={handleRegistration}
-                size="lg" 
-                className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold shadow-lg hover:shadow-xl border-0"
-              >
+              <Button onClick={handleRegistration} size="lg" className="hover:scale-105 transform transition-all duration-300 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold shadow-lg hover:shadow-xl border-0">
                 Join CSAC Today
               </Button>
-              <Button 
-                onClick={handleDownloadResources}
-                variant="secondary" 
-                size="lg" 
-                className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl"
-              >
+              <Button onClick={handleDownloadResources} variant="secondary" size="lg" className="hover:scale-105 transform transition-all duration-300 bg-white/10 backdrop-blur-sm border border-white/30 text-white hover:bg-white hover:text-primary font-semibold shadow-lg hover:shadow-xl">
                 Download Resources
               </Button>
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
 export default Index;
