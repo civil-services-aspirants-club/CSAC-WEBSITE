@@ -1,14 +1,19 @@
-import { Calendar, Users, BookOpen, ArrowRight, Award, Star } from "lucide-react";
+import { useState } from "react";
+import { Calendar, Users, BookOpen, ArrowRight, Award, Star, Edit2, Save, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import heroImage from "@/assets/hero-bg-new.jpg";
 import csacLogo from "@/assets/csac-logo.png";
+
 const Index = () => {
   // Replace these with your actual links
   const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
   const googleDriveLink = "https://www.googledrive.com";
   
-  const upcomingEvents = [{
+  const [editingEvent, setEditingEvent] = useState<number | null>(null);
+  const [upcomingEvents, setUpcomingEvents] = useState([{
     date: "Dec 15",
     title: "UPSC Mains Strategy Workshop",
     time: "2:00 PM - 5:00 PM",
@@ -23,7 +28,7 @@ const Index = () => {
     title: "Current Affairs Discussion",
     time: "3:00 PM - 5:00 PM",
     venue: "Study Hall"
-  }];
+  }]);
 
   const handleRegistration = () => {
     window.open(registrationFormLink, '_blank');
@@ -31,6 +36,20 @@ const Index = () => {
 
   const handleDownloadResources = () => {
     window.open(googleDriveLink, '_blank');
+  };
+
+  const handleEditEvent = (index: number) => {
+    setEditingEvent(index);
+  };
+
+  const handleSaveEvent = (index: number, field: string, value: string) => {
+    const updatedEvents = [...upcomingEvents];
+    updatedEvents[index] = { ...updatedEvents[index], [field]: value };
+    setUpcomingEvents(updatedEvents);
+  };
+
+  const handleCancelEdit = () => {
+    setEditingEvent(null);
   };
   const features = [{
     icon: <Users className="h-8 w-8 text-primary" />,
@@ -130,18 +149,83 @@ const Index = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             {upcomingEvents.map((event, index) => (
-              <Card key={index} className="hover:shadow-xl hover:scale-105 transform transition-all duration-300 border-l-4 border-l-primary">
+              <Card key={index} className="hover:shadow-xl transform transition-all duration-300 border-l-4 border-l-primary relative">
                 <CardContent className="p-6">
+                  {/* Edit Button */}
+                  <div className="absolute top-2 right-2">
+                    {editingEvent === index ? (
+                      <div className="flex gap-2">
+                        <Button
+                          size="sm"
+                          variant="outline"
+                          onClick={handleCancelEdit}
+                          className="p-1"
+                        >
+                          <X className="h-4 w-4" />
+                        </Button>
+                        <Button
+                          size="sm"
+                          onClick={() => setEditingEvent(null)}
+                          className="p-1"
+                        >
+                          <Save className="h-4 w-4" />
+                        </Button>
+                      </div>
+                    ) : (
+                      <Button
+                        size="sm"
+                        variant="ghost"
+                        onClick={() => handleEditEvent(index)}
+                        className="p-1"
+                      >
+                        <Edit2 className="h-4 w-4" />
+                      </Button>
+                    )}
+                  </div>
+
                   <div className="flex items-center mb-4">
                     <Calendar className="h-6 w-6 text-primary mr-3" />
-                    <span className="text-lg font-semibold text-primary">{event.date}</span>
+                    {editingEvent === index ? (
+                      <Input
+                        className="text-lg font-semibold text-primary bg-transparent border-b border-primary"
+                        value={event.date}
+                        onChange={(e) => handleSaveEvent(index, 'date', e.target.value)}
+                      />
+                    ) : (
+                      <span className="text-lg font-semibold text-primary">{event.date}</span>
+                    )}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
-                  <p className="text-gray-600 mb-2">{event.time}</p>
-                  <p className="text-gray-600 mb-4">{event.venue}</p>
+                  
+                  {editingEvent === index ? (
+                    <>
+                      <Input
+                        className="text-xl font-bold text-gray-900 mb-2 bg-transparent border-b"
+                        value={event.title}
+                        onChange={(e) => handleSaveEvent(index, 'title', e.target.value)}
+                      />
+                      <Input
+                        className="text-gray-600 mb-2 bg-transparent border-b"
+                        value={event.time}
+                        onChange={(e) => handleSaveEvent(index, 'time', e.target.value)}
+                      />
+                      <Input
+                        className="text-gray-600 mb-4 bg-transparent border-b"
+                        value={event.venue}
+                        onChange={(e) => handleSaveEvent(index, 'venue', e.target.value)}
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <h3 className="text-xl font-bold text-gray-900 mb-2">{event.title}</h3>
+                      <p className="text-gray-600 mb-2">{event.time}</p>
+                      <p className="text-gray-600 mb-4">{event.venue}</p>
+                    </>
+                  )}
+                  
                   <Button 
                     onClick={handleRegistration}
                     className="w-full hover:scale-105 transform transition-all duration-300"
+                    disabled={editingEvent === index}
                   >
                     Register Now
                   </Button>
