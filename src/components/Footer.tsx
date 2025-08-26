@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="flex items-center space-x-2 mb-4">
               <Heart className="h-4 w-4 text-red-400" />
               <span className="text-primary-foreground/90 text-sm italic">
-                "जय हिन्द! वन्दे मातरम्!"
+                "शीलं परम भूषणम्"
               </span>
             </div>
             <div className="flex space-x-4">
