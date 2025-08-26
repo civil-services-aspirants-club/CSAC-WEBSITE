@@ -157,28 +157,29 @@ const Index = () => {
                       <div className="flex gap-2">
                         <Button
                           size="sm"
-                          variant="outline"
+                          variant="destructive"
                           onClick={handleCancelEdit}
-                          className="p-1"
+                          className="px-2 py-1"
                         >
-                          <X className="h-4 w-4" />
+                          <X className="h-4 w-4 mr-1" /> Cancel
                         </Button>
                         <Button
                           size="sm"
+                          variant="default"
                           onClick={() => setEditingEvent(null)}
-                          className="p-1"
+                          className="px-2 py-1 bg-green text-white hover:bg-green/90"
                         >
-                          <Save className="h-4 w-4" />
+                          <Save className="h-4 w-4 mr-1" /> Save
                         </Button>
                       </div>
                     ) : (
                       <Button
                         size="sm"
-                        variant="ghost"
+                        variant="outline"
                         onClick={() => handleEditEvent(index)}
-                        className="p-1"
+                        className="px-2 py-1 hover:bg-primary hover:text-white transition-colors"
                       >
-                        <Edit2 className="h-4 w-4" />
+                        <Edit2 className="h-4 w-4 mr-1" /> Edit
                       </Button>
                     )}
                   </div>
