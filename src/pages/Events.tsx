@@ -54,17 +54,6 @@ const Events = () => {
       description: "Weekly current affairs discussion focusing on recent developments and their implications for civil services.",
       seats: "Unlimited",
       type: "Discussion"
-    },
-    {
-      id: 4,
-      title: "Essay Writing Masterclass",
-      date: "January 5, 2025",
-      time: "11:00 AM - 3:00 PM",
-      venue: "Classroom 205",
-      speaker: "Prof. Rajesh Kumar",
-      description: "Learn effective essay writing techniques for UPSC with practice sessions and personalized feedback.",
-      seats: "30 seats available",
-      type: "Masterclass"
     }
   ];
 
@@ -86,6 +75,42 @@ const Events = () => {
       date: "September 2024",
       participants: "150+ beneficiaries", 
       description: "Free distribution of updated study materials and previous year question papers."
+    },
+    {
+      title: "National Seminar on Public Administration",
+      date: "August 2024",
+      participants: "300+ participants",
+      description: "Two-day national seminar featuring experts from various universities and civil services."
+    },
+    {
+      title: "Ethics & Integrity Workshop",
+      date: "July 2024",
+      participants: "80+ students",
+      description: "Interactive workshop on ethics, integrity and aptitude for civil services aspirants."
+    },
+    {
+      title: "Answer Writing Bootcamp",
+      date: "June 2024",
+      participants: "100+ students",
+      description: "Intensive 3-day bootcamp focused on developing answer writing skills for mains examination."
+    },
+    {
+      title: "Constitutional Law Debate Competition",
+      date: "May 2024",
+      participants: "50+ teams",
+      description: "Inter-college debate competition on contemporary constitutional issues and landmark judgments."
+    },
+    {
+      title: "Geography Optional Guidance Session",
+      date: "April 2024",
+      participants: "75+ aspirants",
+      description: "Specialized session for geography optional subject with map practice and resource sharing."
+    },
+    {
+      title: "Women in Civil Services Panel Discussion",
+      date: "March 2024",
+      participants: "180+ attendees",
+      description: "Inspiring panel discussion featuring successful women officers sharing their journey and experiences."
     }
   ];
 

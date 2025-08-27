@@ -26,6 +26,14 @@ const About = () => {
   ];
 
   const team = [
+    // Top team member (Director/Head)
+    {
+      name: "Dr. Ashok Kumar Singh",
+      role: "Director & Chief Mentor",
+      department: "Former IAS Officer (Retd.)",
+      image: "/placeholder.svg"
+    },
+    // Original team members
     {
       name: "Dr. Priya Sharma",
       role: "Faculty Advisor",
@@ -48,6 +56,115 @@ const About = () => {
       name: "Sneha Patel",
       role: "Events Coordinator",
       department: "Sociology, Third Year",
+      image: "/placeholder.svg"
+    },
+    // 18 Additional team members
+    {
+      name: "Dr. Neha Agarwal",
+      role: "Faculty Advisor",
+      department: "Economics",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Prof. S.K. Mishra",
+      role: "Faculty Advisor",
+      department: "History",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Dr. Ravi Prakash",
+      role: "Faculty Advisor",
+      department: "Geography",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Aisha Khan",
+      role: "Research Coordinator",
+      department: "International Relations, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Vikram Joshi",
+      role: "Mock Test Coordinator",
+      department: "Public Administration, Third Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Meera Reddy",
+      role: "Content Developer",
+      department: "English Literature, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Arjun Nair",
+      role: "Technical Coordinator",
+      department: "Computer Science, Third Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Pooja Gupta",
+      role: "Social Media Manager",
+      department: "Mass Communication, Second Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Rohit Sharma",
+      role: "Library Coordinator",
+      department: "Library Science, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Kavita Desai",
+      role: "Mentorship Program Lead",
+      department: "Psychology, Third Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Arun Bhatt",
+      role: "Current Affairs Analyst",
+      department: "Journalism, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Sonia Mehta",
+      role: "Workshop Organizer",
+      department: "Management Studies, Third Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Rajat Singh",
+      role: "Study Group Facilitator",
+      department: "Law, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Divya Pandey",
+      role: "Answer Writing Coach",
+      department: "Hindi Literature, Fourth Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Karan Malhotra",
+      role: "Prelims Strategy Coordinator",
+      department: "Mathematics, Third Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Priyanka Roy",
+      role: "Ethics Paper Specialist",
+      department: "Philosophy, Final Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Amit Saxena",
+      role: "Optional Subject Mentor",
+      department: "Anthropology, Fourth Year",
+      image: "/placeholder.svg"
+    },
+    {
+      name: "Nisha Kumari",
+      role: "Student Welfare Officer",
+      department: "Social Work, Third Year",
       image: "/placeholder.svg"
     }
   ];
