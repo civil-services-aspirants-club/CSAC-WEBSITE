@@ -1,8 +1,5 @@
-import { useState } from "react";
-import { Users, Target, BookOpen, Award, Edit2, Check, X } from "lucide-react";
+import { Users, Target, BookOpen, Award } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 // Import team member photos
@@ -54,7 +51,8 @@ const About = () => {
     }
   ];
 
-  const [teamMembers, setTeamMembers] = useState([
+  // EDIT TEAM MEMBERS HERE - Just modify the data below
+  const teamMembers = [
     {
       id: 1,
       name: "Dr. Ashok Kumar Singh",
@@ -216,37 +214,7 @@ const About = () => {
       department: "Social Work, Third Year",
       image: photo23
     }
-  ]);
-
-  const [editingMember, setEditingMember] = useState<number | null>(null);
-  const [editedData, setEditedData] = useState<{
-    name: string;
-    role: string;
-    department: string;
-  }>({ name: "", role: "", department: "" });
-
-  const handleEdit = (member: typeof teamMembers[0]) => {
-    setEditingMember(member.id);
-    setEditedData({
-      name: member.name,
-      role: member.role,
-      department: member.department
-    });
-  };
-
-  const handleSave = (id: number) => {
-    setTeamMembers(teamMembers.map(member => 
-      member.id === id 
-        ? { ...member, ...editedData }
-        : member
-    ));
-    setEditingMember(null);
-  };
-
-  const handleCancel = () => {
-    setEditingMember(null);
-    setEditedData({ name: "", role: "", department: "" });
-  };
+  ];
 
   return (
     <div className="min-h-screen">
@@ -315,75 +283,24 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {teamMembers.map((member) => (
               <Card key={member.id} className="card-shadow border-0 overflow-hidden">
-                <div className="aspect-square bg-muted flex items-center justify-center relative">
+                <div className="aspect-square bg-muted flex items-center justify-center">
                   <Avatar className="w-full h-full rounded-none">
                     <AvatarImage src={member.image} alt={member.name} />
                     <AvatarFallback className="rounded-none bg-muted">
                       <Users className="h-16 w-16 text-muted-foreground" />
                     </AvatarFallback>
                   </Avatar>
-                  {editingMember !== member.id && (
-                    <Button
-                      onClick={() => handleEdit(member)}
-                      size="icon"
-                      variant="secondary"
-                      className="absolute top-2 right-2 h-8 w-8"
-                    >
-                      <Edit2 className="h-4 w-4" />
-                    </Button>
-                  )}
                 </div>
-                <CardContent className="p-6">
-                  {editingMember === member.id ? (
-                    <div className="space-y-3">
-                      <Input
-                        value={editedData.name}
-                        onChange={(e) => setEditedData({ ...editedData, name: e.target.value })}
-                        placeholder="Name"
-                        className="text-sm"
-                      />
-                      <Input
-                        value={editedData.role}
-                        onChange={(e) => setEditedData({ ...editedData, role: e.target.value })}
-                        placeholder="Role"
-                        className="text-sm"
-                      />
-                      <Input
-                        value={editedData.department}
-                        onChange={(e) => setEditedData({ ...editedData, department: e.target.value })}
-                        placeholder="Department"
-                        className="text-sm"
-                      />
-                      <div className="flex gap-2 justify-center">
-                        <Button
-                          onClick={() => handleSave(member.id)}
-                          size="sm"
-                          variant="default"
-                        >
-                          <Check className="h-4 w-4" />
-                        </Button>
-                        <Button
-                          onClick={handleCancel}
-                          size="sm"
-                          variant="outline"
-                        >
-                          <X className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    </div>
-                  ) : (
-                    <div className="text-center">
-                      <h3 className="text-lg font-semibold text-foreground mb-2">
-                        {member.name}
-                      </h3>
-                      <p className="text-accent font-medium mb-1">
-                        {member.role}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {member.department}
-                      </p>
-                    </div>
-                  )}
+                <CardContent className="p-6 text-center">
+                  <h3 className="text-lg font-semibold text-foreground mb-2">
+                    {member.name}
+                  </h3>
+                  <p className="text-accent font-medium mb-1">
+                    {member.role}
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    {member.department}
+                  </p>
                 </CardContent>
               </Card>
             ))}
