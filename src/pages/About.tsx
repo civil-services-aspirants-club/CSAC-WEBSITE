@@ -55,163 +55,140 @@ const About = () => {
   const teamMembers = [
     {
       id: 1,
-      name: "Dr. Ashok Kumar Singh",
-      role: "Director & Chief Mentor",
-      department: "Former IAS Officer (Retd.)",
+      name: "Dr. JAFFER SADIQ",
+      role: "CONVENOR",
       image: photo1
     },
     {
       id: 2,
-      name: "Dr. Priya Sharma",
-      role: "Faculty Advisor",
-      department: "Political Science",
+      name: "D ANAGHA SREENIDHI ",
+      role: "PRESIDENT",
       image: photo2
     },
     {
       id: 3,
-      name: "Prof. Rajesh Kumar",
-      role: "Faculty Advisor", 
-      department: "Public Administration",
+      name: "A GAYATHRI",
+      role: "CHIEF OF ACADEMIC CELL", 
       image: photo3
     },
     {
       id: 4,
-      name: "Ankit Verma",
-      role: "Student Coordinator",
-      department: "Political Science, Final Year",
+      name: "K VARSHITH REDDY",
+      role: "GEN SEC & TREASURER",
       image: photo4
     },
     {
       id: 5,
-      name: "Sneha Patel",
-      role: "Events Coordinator",
-      department: "Sociology, Third Year",
+      name: "T SURYA VIKAS",
+      role: "JOINT SECRETARY",
       image: photo5
     },
     {
       id: 6,
-      name: "Dr. Neha Agarwal",
-      role: "Faculty Advisor",
-      department: "Economics",
+      name: "K SANDEEP REDDY",
+      role: "VICE PRESIDENT",
       image: photo6
     },
     {
       id: 7,
-      name: "Prof. S.K. Mishra",
-      role: "Faculty Advisor",
-      department: "History",
+      name: "MVS NAGAMANI",
+      role: "DESIGNING & PR HEAD",
       image: photo7
     },
     {
       id: 8,
-      name: "Dr. Ravi Prakash",
-      role: "Faculty Advisor",
-      department: "Geography",
+      name: "MD SAMAD",
+      role: "ORGANISING HEAD",
       image: photo8
     },
     {
       id: 9,
-      name: "Aisha Khan",
-      role: "Research Coordinator",
-      department: "International Relations, Final Year",
+      name: "V SIRI",
+      role: "DEPUTY ORGANISING",
       image: photo9
     },
     {
       id: 10,
-      name: "Vikram Joshi",
-      role: "Mock Test Coordinator",
-      department: "Public Administration, Third Year",
+      name: "P AARTHI",
+      role: "PR HEAD",
       image: photo10
     },
     {
       id: 11,
-      name: "Meera Reddy",
-      role: "Content Developer",
-      department: "English Literature, Final Year",
+      name: "A JYOTHSNA",
+      role: "DEPUTY PR",
       image: photo11
     },
     {
       id: 12,
-      name: "Arjun Nair",
-      role: "Technical Coordinator",
-      department: "Computer Science, Third Year",
+      name: "D VISHAL",
+      role: "DEPUTY DESIGNING",
       image: photo12
     },
     {
       id: 13,
-      name: "Pooja Gupta",
-      role: "Social Media Manager",
-      department: "Mass Communication, Second Year",
+      name: "K PRAVALIKA",
+      role: "RESOURCE HEAD",
       image: photo13
     },
     {
       id: 14,
-      name: "Rohit Sharma",
-      role: "Library Coordinator",
-      department: "Library Science, Final Year",
+      name: "S SOMESH KUMAR",
+      role: "DEPUTY RESOURCE",
       image: photo14
     },
     {
       id: 15,
-      name: "Kavita Desai",
-      role: "Mentorship Program Lead",
-      department: "Psychology, Third Year",
+      name: "K SRIDHAR",
+      role: "DEPUTY RESOURCE",
       image: photo15
     },
     {
       id: 16,
-      name: "Arun Bhatt",
-      role: "Current Affairs Analyst",
-      department: "Journalism, Final Year",
+      name: "M KARTHIK REDDY",
+      role: "ORGANISING HEAD",
       image: photo16
     },
     {
       id: 17,
-      name: "Sonia Mehta",
-      role: "Workshop Organizer",
-      department: "Management Studies, Third Year",
+      name: "G VARSHA",
+      role: "DEPUTY ORGANISING",
       image: photo17
     },
     {
       id: 18,
-      name: "Rajat Singh",
-      role: "Study Group Facilitator",
-      department: "Law, Final Year",
+      name: "SATHWIKA REDDY ",
+      role: "DEPUTY PR",
       image: photo18
     },
     {
       id: 19,
-      name: "Divya Pandey",
-      role: "Answer Writing Coach",
-      department: "Hindi Literature, Fourth Year",
+      name: "B SAHASRA",
+      role: "DEPUTY DESIGNING",
       image: photo19
     },
     {
       id: 20,
-      name: "Karan Malhotra",
-      role: "Prelims Strategy Coordinator",
-      department: "Mathematics, Third Year",
+      name: "Kalyani",
+      role: "Advisory",
       image: photo20
     },
     {
       id: 21,
-      name: "Priyanka Roy",
-      role: "Ethics Paper Specialist",
-      department: "Philosophy, Final Year",
+      name: "Spoorthy",
+      role: "Advisory",
       image: photo21
     },
     {
       id: 22,
-      name: "Amit Saxena",
-      role: "Optional Subject Mentor",
-      department: "Anthropology, Fourth Year",
+      name: "karthik",
+      role: "Advisory",
       image: photo22
     },
     {
       id: 23,
-      name: "Nisha Kumari",
-      role: "Student Welfare Officer",
-      department: "Social Work, Third Year",
+      name: "Banudeep",
+      role: "Advisory",
       image: photo23
     }
   ];
@@ -239,10 +216,15 @@ const About = () => {
               Our Mission
             </h2>
             <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              The Civil Services Aspirants Club (CSAC) is dedicated to creating a supportive 
-              ecosystem for students preparing for UPSC and State Public Service Commission 
-              examinations. We believe in the power of collective learning, mentorship, 
-              and unwavering determination to achieve success in civil services.
+              The Civil Services Aspirants Club aims to create awareness about civil services and the diverse career 
+              paths in governance and public administration. It fosters critical thinking and analytical skills among 
+              students through intellectual discussions, debates, and interactive sessions. The club actively organizes 
+              events, seminars, and workshops designed to equip students with the knowledge and confidence to tackle
+               real-world challenges in governance and policymaking. At SNIST, aspirants are provided with high-quality 
+               education and guidance through annual Foundation Courses conducted in collaboration with renowned coaching 
+               academies, strongly supported by the management. Above all, the club seeks to inspire and instill leadership 
+               qualities, patriotism, and a deep sense of responsibility among students, preparing them to emerge as capable, 
+               ethical, and visionary future leaders.
             </p>
           </div>
 
@@ -299,7 +281,7 @@ const About = () => {
                     {member.role}
                   </p>
                   <p className="text-sm text-muted-foreground">
-                    {member.department}
+                    {}
                   </p>
                 </CardContent>
               </Card>

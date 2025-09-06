@@ -1,4 +1,13 @@
-import { Mail, Phone, MapPin, Clock, Send, Users, MessageCircle, Heart } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  Send,
+  Users,
+  MessageCircle,
+  Heart,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Contact = () => {
@@ -16,11 +25,12 @@ const Contact = () => {
               Join CSAC Family
             </h1>
             <p className="text-xl md:text-2xl text-primary-foreground/90 max-w-3xl mx-auto">
-              Ready to start your civil services journey? Connect with us and become part of our dedicated community.
+              Ready to start your civil services journey? Connect with us and
+              become part of our dedicated community.
             </p>
             <div className="mt-8 text-primary-foreground/90 italic">
               <span className="text-accent">"</span>
-              सेवा ही धर्म है - Service is Righteousness
+              शीलं परम भूषणम्
               <span className="text-accent">"</span>
             </div>
           </div>
@@ -32,10 +42,13 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Get in Touch</h2>
+              <h2 className="text-3xl font-bold text-foreground mb-6">
+                Get in Touch
+              </h2>
               <p className="text-muted-foreground text-lg mb-8">
-                Have questions about civil services preparation? Want to join our study groups? 
-                We're here to help you on your journey to serve the nation.
+                Have questions about civil services preparation? Want to join
+                our study groups? We're here to help you on your journey to
+                serve the nation.
               </p>
             </div>
 
@@ -47,8 +60,12 @@ const Contact = () => {
                       <Mail className="h-6 w-6 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Email Us</h3>
-                      <p className="text-sm text-muted-foreground">Quick response</p>
+                      <h3 className="font-semibold text-foreground">
+                        Email Us
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Quick response
+                      </p>
                     </div>
                   </div>
                   <p className="text-foreground">csac@sreenidhi.edu.in</p>
@@ -63,10 +80,12 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-foreground">Call Us</h3>
-                      <p className="text-sm text-muted-foreground">Mon-Fri, 9-6</p>
+                      <p className="text-sm text-muted-foreground">
+                        Mon-Fri, 9-6
+                      </p>
                     </div>
                   </div>
-                  <p className="text-foreground">+91 98765 43210</p>
+                  <p className="text-foreground">+91 78427 65566</p>
                 </CardContent>
               </Card>
 
@@ -77,51 +96,61 @@ const Contact = () => {
                       <MapPin className="h-6 w-6 text-secondary" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-foreground">Visit Us</h3>
-                      <p className="text-sm text-muted-foreground">Student Activity Center</p>
+                      <h3 className="font-semibold text-foreground">
+                        Visit Us
+                      </h3>
+                      <p className="text-sm text-muted-foreground">
+                        Student Activity Center
+                      </p>
                     </div>
                   </div>
                   <p className="text-foreground">
-                    Room 203, Building A<br />
-                    Sreenidhi Institute of Science & Technology<br />
-                    Hyderabad, Telangana
+                    Room No : 7306
+                    <br />
+                    Library Block
+                    <br />
+                    Sreenidhi Institute of Science and Technology
                   </p>
-                </CardContent>
-              </Card>
-
-              <Card className="hover-scale hover-glow transition-all duration-300 md:col-span-2">
-                <CardContent className="p-6">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <Clock className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-foreground">Office Hours</h3>
-                      <p className="text-sm text-muted-foreground">Regular meeting times</p>
-                    </div>
-                  </div>
-                  <div className="space-y-1 text-foreground">
-                    <p>Monday - Friday: 5:00 PM - 7:00 PM</p>
-                    <p>Saturday: 2:00 PM - 6:00 PM</p>
-                    <p>Sunday: Special sessions (as announced)</p>
-                  </div>
                 </CardContent>
               </Card>
             </div>
 
             {/* Social Links */}
             <div className="bg-card rounded-xl p-6 shadow-lg">
-              <h3 className="text-xl font-semibold text-foreground mb-4">Connect With Us</h3>
+              <h3 className="text-xl font-semibold text-foreground mb-4">
+                Connect With Us
+              </h3>
               <div className="flex space-x-4">
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
-                  <MessageCircle className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
-                  <Mail className="h-6 w-6 text-accent-foreground" />
-                </div>
-                <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
-                  <Users className="h-6 w-6 text-accent-foreground" />
-                </div>
+                <a
+                  href="https://www.linkedin.com/company/csac-snist/posts/?feedView=all"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
+                    <MessageCircle className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                </a>
+                <a
+                  href="mailto:csac@sreenidhi.edu.in?subject=Inquiry%20about%20CSAC&body=Hello%2C%0A%0AI%20would%20like%20to%20know..."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
+                    <Mail className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                </a>
+                <a
+                  href="https://chat.whatsapp.com/GwfBDQGipjtLY2dZKUhoIz?mode=ems_copy_c"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block"
+                >
+                  <div className="w-12 h-12 bg-accent rounded-full flex items-center justify-center hover:bg-accent-dark transition-colors cursor-pointer hover-scale hover-glow">
+                    <Users className="h-6 w-6 text-accent-foreground" />
+                  </div>
+                </a>
               </div>
               <p className="text-muted-foreground text-sm mt-4">
                 Join our WhatsApp group for daily updates and discussions!
@@ -133,15 +162,18 @@ const Contact = () => {
           <div className="space-y-8">
             <Card className="shadow-xl hover-glow">
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Quick Links</CardTitle>
+                <CardTitle className="text-2xl text-foreground">
+                  Quick Links
+                </CardTitle>
                 <p className="text-muted-foreground">
-                  Access important resources and join our community with one click
+                  Access important resources and join our community with one
+                  click
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">
                 <div className="grid grid-cols-1 gap-4">
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScVWJBqsC01mOz5kfTqNgQu4V4LOQUqPIXOGXD-vWQj1FsNLg/viewform"
+                    href="https://forms.gle/71MmruT8e8T7H25w8"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
@@ -154,8 +186,12 @@ const Contact = () => {
                               <Users className="h-6 w-6 text-primary" />
                             </div>
                             <div>
-                              <h3 className="font-semibold text-foreground text-lg">Join CSAC</h3>
-                              <p className="text-sm text-muted-foreground">Fill out our membership form</p>
+                              <h3 className="font-semibold text-foreground text-lg">
+                                Join CSAC
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                Fill out our membership form
+                              </p>
                             </div>
                           </div>
                           <Send className="h-5 w-5 text-primary" />
@@ -178,32 +214,75 @@ const Contact = () => {
                               <Heart className="h-6 w-6 text-accent" />
                             </div>
                             <div>
-                              <h3 className="font-semibold text-foreground text-lg">Study Resources</h3>
-                              <p className="text-sm text-muted-foreground">Access our resource library</p>
+                              <h3 className="font-semibold text-foreground text-lg">
+                                Study Resources
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                Access our resource library
+                              </p>
                             </div>
                           </div>
-                          <Send className="h-5 w-5 text-accent" />
+                          <Send className="h-5 w-5 text-primary" />
                         </div>
                       </CardContent>
                     </Card>
                   </a>
 
-                  <Card className="hover-scale hover-glow transition-all duration-300 border-secondary/20">
-                    <CardContent className="p-6">
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center space-x-4">
-                          <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
-                            <MessageCircle className="h-6 w-6 text-secondary" />
+                  <a
+                    href="https://chat.whatsapp.com/GwfBDQGipjtLY2dZKUhoIz?mode=ems_copy_c"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+                    <Card className="hover-scale hover-glow transition-all duration-300 border-accent/20">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                              <MessageCircle className="h-5 w-5 text-green-600" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground text-lg">
+                                WhatsApp Community
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                Join our discussion group
+                              </p>
+                            </div>
                           </div>
-                          <div>
-                            <h3 className="font-semibold text-foreground text-lg">WhatsApp Community</h3>
-                            <p className="text-sm text-muted-foreground">Join our discussion group</p>
-                          </div>
+                          <Send className="h-5 w-5 text-primary" />
                         </div>
-                        <Send className="h-5 w-5 text-secondary" />
-                      </div>
-                    </CardContent>
-                  </Card>
+                      </CardContent>
+                    </Card>
+                  </a>
+                  <a
+                    href="https://forms.gle/3YVxQzCibeYiqdMr5"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block"
+                  >
+
+                    <Card className="hover-scale hover-glow transition-all duration-300 border-primary/20">
+                      <CardContent className="p-6">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center space-x-4">
+                            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                              <Users className="h-6 w-6 text-primary" />
+                            </div>
+                            <div>
+                              <h3 className="font-semibold text-foreground text-lg">
+                                Know More
+                              </h3>
+                              <p className="text-sm text-muted-foreground">
+                                Know more about csac
+                              </p>
+                            </div>
+                          </div>
+                          <Send className="h-5 w-5 text-primary" />
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -211,42 +290,69 @@ const Contact = () => {
             {/* Why Join CSAC */}
             <Card className="shadow-xl hover-glow">
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Why Join CSAC?</CardTitle>
+                <CardTitle className="text-2xl text-foreground">
+                  Why Join CSAC?
+                </CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Expert Mentorship</h4>
-                    <p className="text-sm text-muted-foreground">Get guidance from successful civil servants and experienced mentors</p>
+                    <h4 className="font-semibold text-foreground">
+                      Expert Mentorship
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Get guidance from successful civil servants and
+                      experienced mentors
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Comprehensive Study Material</h4>
-                    <p className="text-sm text-muted-foreground">Access curated resources, previous year papers, and current affairs updates</p>
+                    <h4 className="font-semibold text-foreground">
+                      Comprehensive Study Material
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Access curated resources, previous year papers, and
+                      current affairs updates
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-secondary rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Mock Interviews & Tests</h4>
-                    <p className="text-sm text-muted-foreground">Regular practice sessions to boost your confidence and performance</p>
+                    <h4 className="font-semibold text-foreground">
+                      Mock Interviews & Tests
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Regular practice sessions to boost your confidence and
+                      performance
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-primary rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Peer Learning</h4>
-                    <p className="text-sm text-muted-foreground">Study with motivated peers and participate in group discussions</p>
+                    <h4 className="font-semibold text-foreground">
+                      Peer Learning
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Study with motivated peers and participate in group
+                      discussions
+                    </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <div className="w-2 h-2 bg-accent rounded-full mt-2"></div>
                   <div>
-                    <h4 className="font-semibold text-foreground">Regular Workshops</h4>
-                    <p className="text-sm text-muted-foreground">Attend sessions on answer writing, personality development, and more</p>
+                    <h4 className="font-semibold text-foreground">
+                      Regular Workshops
+                    </h4>
+                    <p className="text-sm text-muted-foreground">
+                      Attend sessions on answer writing, personality
+                      development, and more
+                    </p>
                   </div>
                 </div>
               </CardContent>

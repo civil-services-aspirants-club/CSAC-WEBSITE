@@ -12,6 +12,7 @@ import Resources from "./pages/Resources";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "./components/ScrollToTop"; // 👈 add this
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop /> {/* 👈 ensures scroll resets on route change */}
         <div className="min-h-screen flex flex-col">
           <Navigation />
           <main className="flex-1">

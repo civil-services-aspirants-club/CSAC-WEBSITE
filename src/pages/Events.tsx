@@ -31,7 +31,8 @@ const Events = () => {
       speaker: "Dr. Priya Sharma",
       description: "Comprehensive strategy session for UPSC Mains preparation covering answer writing techniques and time management.",
       seats: "50 seats available",
-      type: "Workshop"
+      type: "Workshop",
+      display : true
     },
     {
       id: 2,
@@ -42,7 +43,8 @@ const Events = () => {
       speaker: "Alumni Panel",
       description: "Individual mock interview sessions with feedback from successful candidates and expert panel members.",
       seats: "20 slots available",
-      type: "Interview"
+      type: "Interview",
+      display : false
     },
     {
       id: 3,
@@ -53,65 +55,73 @@ const Events = () => {
       speaker: "Student Coordinators",
       description: "Weekly current affairs discussion focusing on recent developments and their implications for civil services.",
       seats: "Unlimited",
-      type: "Discussion"
+      type: "Discussion",
+      display : true
+    },
+    {
+      id: 4,
+      title: "Current Affairs Group Discussion",
+      date: "December 25, 2024",
+      time: "3:00 PM - 5:00 PM", 
+      venue: "Study Hall B",
+      speaker: "Student Coordinators",
+      description: "Weekly current affairs discussion focusing on recent developments and their implications for civil services.",
+      seats: "Unlimited",
+      type: "Discussion",
+      display : true
     }
   ];
 
   const pastEvents = [
     {
-      title: "UPSC Prelims Mock Test Series",
-      date: "November 2024",
-      participants: "120+ students",
-      description: "Comprehensive mock test series with detailed analysis and feedback sessions."
+      title: "Guest lecture by Shri GHP Raju Sir, IPS",
+      date: "July 2025",
+      participants: "250+ attendees",
+      description: "An insightful session delivered by Shri GHP Raju Sir, IPS, sharing valuable guidance and experiences."
     },
     {
-      title: "Guest Lecture by IAS Officer",
-      date: "October 2024", 
-      participants: "200+ attendees",
-      description: "Inspiring session by Ms. Ananya Singh (IAS 2019) on preparation strategy and motivation."
+      title: "Annadaata - A celebration for Kisan Diwas",
+      date: "December 2024", 
+      participants: "70+ attendees",
+      description: " A visit to Kachavani Singaram allowed students to learn about farming techniques and challenges, fostering a deeper appreciation for farmers’ contributions to the society."
     },
     {
-      title: "Study Materials Distribution Drive",
+      title: "An Expert Talk by Shri Akella Raghavendra Sir",
       date: "September 2024",
-      participants: "150+ beneficiaries", 
-      description: "Free distribution of updated study materials and previous year question papers."
+      participants: "150+ attendees", 
+      description: "This session explored career opportunities in the government sector for engineering graduates, with practical insights shared by the renowned mentor Akella Raghavendra sir."
     },
     {
-      title: "National Seminar on Public Administration",
+      title: "An interactive session with Shri Jaya Prakash Narayan Sir, IAS ",
       date: "August 2024",
-      participants: "300+ participants",
-      description: "Two-day national seminar featuring experts from various universities and civil services."
+      participants: "500+ attendees",
+      description: "Dr.JP Narayana sir shared stories from his distinguished IAS career, highlighting the importance of ethical governance and impactful leadership, followed by an enriching Q&A session"
     },
     {
-      title: "Ethics & Integrity Workshop",
+      title: "A Guest Lecture by Shri J D Lakshmi Narayan Sir, IPS",
       date: "July 2024",
-      participants: "80+ students",
-      description: "Interactive workshop on ethics, integrity and aptitude for civil services aspirants."
+      participants: "500+ attendees",
+      description: "This guest lecture by Mr JD Lakshmi Narayan left a profound impact on the participants. The session inspired students to imbibe leadership qualities and apply the insights shared to their career journeys."
     },
     {
-      title: "Answer Writing Bootcamp",
+      title: "An inspirational session by Balalatha Mam",
       date: "June 2024",
-      participants: "100+ students",
-      description: "Intensive 3-day bootcamp focused on developing answer writing skills for mains examination."
+      participants: "500+ attendees",
+      description: " Ms. Balalatha, a former Deputy Director in the Ministry of Defence, inspired students with her journey and provided insights into strategic UPSC preparation. "
     },
     {
-      title: "Constitutional Law Debate Competition",
+      title: "Mock UPSC exam ",
       date: "May 2024",
-      participants: "50+ teams",
-      description: "Inter-college debate competition on contemporary constitutional issues and landmark judgments."
+      participants: "100+ attendees",
+      description: "A simulated UPSC test with inter-college debates on constitutional issues and landmark judgments."
     },
     {
-      title: "Geography Optional Guidance Session",
+      title: "CSAC 8th Anniversary Celebrations",
       date: "April 2024",
       participants: "75+ aspirants",
-      description: "Specialized session for geography optional subject with map practice and resource sharing."
+      description: "A memorable farewell-style gathering with engaging sessions and shared experiences."
     },
-    {
-      title: "Women in Civil Services Panel Discussion",
-      date: "March 2024",
-      participants: "180+ attendees",
-      description: "Inspiring panel discussion featuring successful women officers sharing their journey and experiences."
-    }
+
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -150,7 +160,7 @@ const Events = () => {
       </section>
 
       {/* Upcoming Events */}
-      <section className="py-20 bg-background">
+      <section className="py-20 pb-0 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">
@@ -162,7 +172,8 @@ const Events = () => {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16">
-            {upcomingEvents.map((event) => (
+            {upcomingEvents.filter(event => event.display !== false).map((event) => (
+
               <Card key={event.id} className="card-shadow border-0 overflow-hidden">
                 <CardHeader className="bg-secondary">
                   <div className="flex justify-between items-start">
@@ -215,7 +226,7 @@ const Events = () => {
       </section>
 
       {/* Past Events */}
-      <section className="py-20 bg-background">
+      <section className="py-20 pt-10 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-6">

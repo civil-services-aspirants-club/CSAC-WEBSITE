@@ -6,7 +6,7 @@ import csacLogo from "@/assets/csac-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const registrationFormLink = "https://forms.google.com/d/1234567890abcdef/viewform";
+  const registrationFormLink = "https://forms.gle/71MmruT8e8T7H25w8";
 
   const handleJoinCSAC = () => {
     window.open(registrationFormLink, '_blank');

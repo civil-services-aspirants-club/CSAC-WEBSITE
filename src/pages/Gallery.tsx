@@ -39,13 +39,59 @@ const Gallery = () => {
               Our Journey in Pictures
             </h2>
             <p className="text-muted-foreground text-lg">
-              Gallery section ready for your photos
             </p>
           </div>
           
           {/* Photo Grid - Ready for direct image uploads */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Photos will be added directly here */}
+            <img src="src/assets/gallery/img1.jpg" alt="Photo 1" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img2.jpg" alt="Photo 2" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img3.jpg" alt="Photo 3" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img4.jpg" alt="Photo 4" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img5.jpg" alt="Photo 5" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img6.jpg" alt="Photo 6" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img7.jpg" alt="Photo 7" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img8.jpg" alt="Photo 8" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img9.jpg" alt="Photo 9" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img10.jpg" alt="Photo 10" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img11.jpg" alt="Photo 11" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img12.jpg" alt="Photo 12" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img13.jpg" alt="Photo 13" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img14.jpg" alt="Photo 14" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img15.jpg" alt="Photo 15" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img16.jpg" alt="Photo 16" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img17.jpg" alt="Photo 17" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img18.jpg" alt="Photo 18" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img19.jpg" alt="Photo 19" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img20.jpg" alt="Photo 20" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img21.jpg" alt="Photo 21" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img22.jpg" alt="Photo 22" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img23.jpg" alt="Photo 23" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img24.jpg" alt="Photo 24" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img25.jpg" alt="Photo 25" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img26.jpg" alt="Photo 26" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img27.jpg" alt="Photo 27" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img28.jpg" alt="Photo 28" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img29.jpg" alt="Photo 29" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img30.jpg" alt="Photo 30" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img31.jpg" alt="Photo 31" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img32.jpg" alt="Photo 32" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img33.jpg" alt="Photo 33" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img34.jpg" alt="Photo 34" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img35.jpg" alt="Photo 35" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img36.jpg" alt="Photo 36" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img37.jpg" alt="Photo 37" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img38.jpg" alt="Photo 38" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img39.jpg" alt="Photo 39" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img40.jpg" alt="Photo 40" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img41.jpg" alt="Photo 41" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img42.jpg" alt="Photo 42" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img43.jpg" alt="Photo 43" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img44.jpg" alt="Photo 44" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img45.jpg" alt="Photo 45" className="w-full h-64 object-cover rounded-xl shadow-md" />
+            <img src="src/assets/gallery/img46.jpg" alt="Photo 46" className="w-full h-64 object-cover rounded-xl shadow-md" />
+
           </div>
         </div>
       </section>
