@@ -306,7 +306,7 @@ const Index = () => {
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                       <img
-                        src="/src/assets/team/24.jpg" // ✅ use forward slashes
+                        src="/team/24.jpg" // ✅ use forward slashes
                         alt="Loading"
                         className="w-full h-full object-cover"
                       />
@@ -332,7 +332,7 @@ const Index = () => {
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                       <img
-                        src="/src/assets/team/25.jpg" // ✅ use forward slashes
+                        src="team/25.jpg" // ✅ use forward slashes
                         alt="Loading"
                         className="w-full h-full object-cover"
                       />
@@ -358,7 +358,7 @@ const Index = () => {
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                       <img
-                        src="/src/assets/team/1.jpg" // ✅ use forward slashes
+                        src="team/1.jpg" // ✅ use forward slashes
                         alt="Loading"
                         className="w-full h-full object-cover"
                       />
@@ -384,7 +384,7 @@ const Index = () => {
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                       <img
-                        src="/src/assets/team/26.jpg" // ✅ use forward slashes
+                        src="team/26.jpg" // ✅ use forward slashes
                         alt="Loading"
                         className="w-full h-full object-cover"
                       />
@@ -410,7 +410,7 @@ const Index = () => {
                   <CardContent className="p-8 text-center">
                     <div className="w-16 h-16 rounded-full overflow-hidden mx-auto mb-4">
                       <img
-                        src="/src/assets/team/2.jpg" // ✅ use forward slashes
+                        src="team/2.jpg" // ✅ use forward slashes
                         alt="Loading"
                         className="w-full h-full object-cover"
                       />

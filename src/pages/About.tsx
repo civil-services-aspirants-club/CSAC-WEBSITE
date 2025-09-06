@@ -3,29 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 // Import team member photos
-import photo1 from "@/assets/team/1.jpg";
-import photo2 from "@/assets/team/2.jpg";
-import photo3 from "@/assets/team/3.jpg";
-import photo4 from "@/assets/team/4.jpg";
-import photo5 from "@/assets/team/5.jpg";
-import photo6 from "@/assets/team/6.jpg";
-import photo7 from "@/assets/team/7.jpg";
-import photo8 from "@/assets/team/8.jpg";
-import photo9 from "@/assets/team/9.jpg";
-import photo10 from "@/assets/team/10.jpg";
-import photo11 from "@/assets/team/11.jpg";
-import photo12 from "@/assets/team/12.jpg";
-import photo13 from "@/assets/team/13.jpg";
-import photo14 from "@/assets/team/14.jpg";
-import photo15 from "@/assets/team/15.jpg";
-import photo16 from "@/assets/team/16.jpg";
-import photo17 from "@/assets/team/17.jpg";
-import photo18 from "@/assets/team/18.jpg";
-import photo19 from "@/assets/team/19.jpg";
-import photo20 from "@/assets/team/20.jpg";
-import photo21 from "@/assets/team/21.jpg";
-import photo22 from "@/assets/team/22.jpg";
-import photo23 from "@/assets/team/23.jpg";
 
 const About = () => {
   const objectives = [
@@ -57,139 +34,139 @@ const About = () => {
       id: 1,
       name: "Dr. JAFFER SADIQ",
       role: "CONVENOR",
-      image: photo1
+      image: "/team/1.jpg"
     },
     {
       id: 2,
       name: "D ANAGHA SREENIDHI ",
       role: "PRESIDENT",
-      image: photo2
+      image: "/team/2.jpg"
     },
     {
       id: 3,
       name: "A GAYATHRI",
       role: "CHIEF OF ACADEMIC CELL", 
-      image: photo3
+      image: "/team/3.jpg"
     },
     {
       id: 4,
       name: "K VARSHITH REDDY",
       role: "GEN SEC & TREASURER",
-      image: photo4
+      image: "/team/4.jpg"
     },
     {
       id: 5,
       name: "T SURYA VIKAS",
       role: "JOINT SECRETARY",
-      image: photo5
+      image: "/team/5.jpg"
     },
     {
       id: 6,
       name: "K SANDEEP REDDY",
       role: "VICE PRESIDENT",
-      image: photo6
+      image: "/team/6.jpg"
     },
     {
       id: 7,
       name: "MVS NAGAMANI",
       role: "DESIGNING & PR HEAD",
-      image: photo7
+      image: "/team/7.jpg"
     },
     {
       id: 8,
       name: "MD SAMAD",
       role: "ORGANISING HEAD",
-      image: photo8
+      image: "/team/8.jpg"
     },
     {
       id: 9,
       name: "V SIRI",
       role: "DEPUTY ORGANISING",
-      image: photo9
+      image: "/team/9.jpg"
     },
     {
       id: 10,
       name: "P AARTHI",
       role: "PR HEAD",
-      image: photo10
+      image: "/team/10.jpg"
     },
     {
       id: 11,
       name: "A JYOTHSNA",
       role: "DEPUTY PR",
-      image: photo11
+      image: "/team/11.jpg"
     },
     {
       id: 12,
       name: "D VISHAL",
       role: "DEPUTY DESIGNING",
-      image: photo12
+      image: "/team/12.jpg"
     },
     {
       id: 13,
       name: "K PRAVALIKA",
       role: "RESOURCE HEAD",
-      image: photo13
+      image: "/team/13.jpg"
     },
     {
       id: 14,
       name: "S SOMESH KUMAR",
       role: "DEPUTY RESOURCE",
-      image: photo14
+      image: "/team/14.jpg"
     },
     {
       id: 15,
       name: "K SRIDHAR",
       role: "DEPUTY RESOURCE",
-      image: photo15
+      image: "/team/15.jpg"
     },
     {
       id: 16,
       name: "M KARTHIK REDDY",
       role: "ORGANISING HEAD",
-      image: photo16
+      image: "/team/16.jpg"
     },
     {
       id: 17,
       name: "G VARSHA",
       role: "DEPUTY ORGANISING",
-      image: photo17
+      image: "/team/17.jpg"
     },
     {
       id: 18,
       name: "SATHWIKA REDDY ",
       role: "DEPUTY PR",
-      image: photo18
+      image: "/team/18.jpg"
     },
     {
       id: 19,
       name: "B SAHASRA",
       role: "DEPUTY DESIGNING",
-      image: photo19
+      image: "/team/19.jpg"
     },
     {
       id: 20,
       name: "Kalyani",
       role: "Advisory",
-      image: photo20
+      image: "/team/20.jpg"
     },
     {
       id: 21,
       name: "Spoorthy",
       role: "Advisory",
-      image: photo21
+      image: "/team/21.jpg"
     },
     {
       id: 22,
       name: "karthik",
       role: "Advisory",
-      image: photo22
+      image: "/team/22.jpg"
     },
     {
       id: 23,
       name: "Banudeep",
       role: "Advisory",
-      image: photo23
+      image: "/team/23.jpg"
     }
   ];
 
