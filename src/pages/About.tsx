@@ -50,7 +50,7 @@ const About = () => {
     },
     {
       id: 4,
-      name: "K VARSHITH REDDY",
+      name: "K SAI VARSHITH REDDY",
       role: "GENERAL SECRETARY",
       image: "/team/4.jpg"
     },
