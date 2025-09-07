@@ -50,7 +50,6 @@ const Gallery = () => {
 <img src="/gallery/img3.jpg" alt="Photo 3" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img4.jpg" alt="Photo 4" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img5.jpg" alt="Photo 5" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
-<img src="/gallery/img6.jpg" alt="Photo 6" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img7.jpg" alt="Photo 7" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img8.jpg" alt="Photo 8" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img9.jpg" alt="Photo 9" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
@@ -66,7 +65,6 @@ const Gallery = () => {
 <img src="/gallery/img19.jpg" alt="Photo 19" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img20.jpg" alt="Photo 20" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img21.jpg" alt="Photo 21" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
-<img src="/gallery/img22.jpg" alt="Photo 22" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img23.jpg" alt="Photo 23" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img24.jpg" alt="Photo 24" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img25.jpg" alt="Photo 25" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
@@ -81,7 +79,6 @@ const Gallery = () => {
 <img src="/gallery/img34.jpg" alt="Photo 34" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img35.jpg" alt="Photo 35" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img36.jpg" alt="Photo 36" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
-<img src="/gallery/img37.jpg" alt="Photo 37" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img38.jpg" alt="Photo 38" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img39.jpg" alt="Photo 39" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img40.jpg" alt="Photo 40" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
