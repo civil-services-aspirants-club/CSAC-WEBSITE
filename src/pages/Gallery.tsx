@@ -106,9 +106,11 @@ const Gallery = () => {
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Join CSAC and create memories while preparing for civil services. Every photo tells a story of dedication and growth.
           </p>
+          <a href = "https://chat.whatsapp.com/GwfBDQGipjtLY2dZKUhoIz?mode=ems_copy_c">
           <button className="bg-white text-primary px-8 py-4 rounded-full font-semibold text-lg hover:bg-accent hover:text-accent-foreground transition-all duration-300 hover-scale hover-glow">
             Join Our Community
           </button>
+          </a>
         </div>
       </section>
     </div>
