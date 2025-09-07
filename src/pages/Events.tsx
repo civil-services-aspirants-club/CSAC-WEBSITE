@@ -44,7 +44,7 @@ const Events = () => {
     },
     {
       id: 2,
-      title: "Civil services Awarness Drive",
+      title: "Civil Services Awarness Drive",
       date: "October 18, 2025",
       time: "10:00 AM - 12:00 PM",
       venue: "Yet to be decided",
@@ -72,7 +72,7 @@ const Events = () => {
     },
     {
       id: 1,
-      title: "mock UPSC",
+      title: "Mock UPSC",
       date: "November 3rd & 4th 2025",
       time: "10:00 AM - 4:00 PM",
       venue: "Yet to be decided",
@@ -131,7 +131,7 @@ const Events = () => {
         "Dr.JP Narayana sir shared stories from his distinguished IAS career, highlighting the importance of ethical governance and impactful leadership, followed by an enriching Q&A session",
     },
     {
-      title: "A Guest Lecture by Shri J D Lakshmi Narayan Sir, IPS",
+      title: "A Guest Lecture by Shri J D Lakshmi Narayana Sir, IPS",
       date: "July 2023",
       participants: "500+ attendees",
       description:
