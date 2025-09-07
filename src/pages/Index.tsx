@@ -46,7 +46,7 @@ const Index = () => {
     },
     {
       date: "Nov 3rd & 4th",
-      title: "mock UPSC",
+      title: "Mock UPSC",
       time: "10:00 AM - 4:00 PM",
       venue: "Free", // i am showing price here
       link :"https://forms.gle/8y7Nd2Y5jjHLDwdV7",
