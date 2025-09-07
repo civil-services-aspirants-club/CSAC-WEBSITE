@@ -23,24 +23,44 @@ const Index = () => {
     "https://drive.google.com/drive/folders/1cmvWEIlXdSSb3Fm8AavGkbE8y2UaJcgv?usp=sharing";
   const [editingEvent, setEditingEvent] = useState<number | null>(null);
   const [upcomingEvents, setUpcomingEvents] = useState([
-    {
-      date: "Nov 15",
-      title: "Mock Parliament",
-      time: "2:00 PM - 5:00 PM",
-      venue: "Seminar Hall 2",
-    },
-    {
-      date: "Oct 20",
-      title: "Mock Interview Session",
+        {
+      date: "Oct 7",
+      title: "Workshops on Time management",
       time: "10:00 AM - 4:00 PM",
-      venue: "Seminar Hall 1",
+      venue: "49/-",
+       link :"https://forms.gle/cAcDUoxVMtk9o3dt5",
+    },
+        {
+      date: "Oct 18",
+      title: "Civil Services Awareness Drive",
+      time: "10:00 AM - 4:00 PM",
+      venue: "Free",
+      link: " https://forms.gle/uZkMsxayNxCrTfoN9 ",
+    },
+        {
+      date: "Oct 22",
+      title: "Current Affairs Group Discussion",
+      time: "10:00 AM - 4:00 PM",
+      venue: "Free",
+       link :" https://forms.gle/G7QkqYAMwNSRdbBX7",
     },
     {
-      date: "Oct 25",
-      title: "Current Affairs Group Discussion",
-      time: "1:00 PM - 3:30 PM",
-      venue: "Vaughn Seminar Hall",
+      date: "Nov 3rd & 4th",
+      title: "mock upsc",
+      time: "10:00 AM - 4:00 PM",
+      venue: "Free", // i am showing price here
+      link :"https://forms.gle/8y7Nd2Y5jjHLDwdV7",
     },
+
+
+    {
+      date: "Nov 12",
+      title: "Extempore",
+      time: "10:00 AM - 4:00 PM",
+      venue: "49/-",
+       link :"https://forms.gle/EEpwdEP4FsShwkSLA",
+    },
+
   ]);
   const handleRegistration = () => {
     window.open(registrationFormLink, "_blank");
@@ -233,9 +253,10 @@ const Index = () => {
                       <p className="text-gray-600 mb-4">{event.venue}</p>
                     </>
                   )}
-
                   <Button
-                    onClick={handleRegistration}
+                    onClick={() =>
+                      window.open(event.link || registrationFormLink, "_blank")
+                    }
                     className="w-full hover:scale-105 transform transition-all duration-300"
                     disabled={editingEvent === index}
                   >
