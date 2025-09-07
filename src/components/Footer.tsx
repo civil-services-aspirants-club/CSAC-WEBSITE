@@ -8,6 +8,7 @@ import {
   Heart,
 } from "lucide-react";
 import csacLogo from "@/assets/csac-logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -75,48 +76,49 @@ const Footer = () => {
           {/* Quick Links */}
           <div>
             <h3 className="font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
-              <li>
-                <a
-                  href="/about"
-                  className="text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/events"
-                  className="text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  Upcoming Events
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/resources"
-                  className="text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  Study Resources
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/gallery"
-                  className="text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  Photo Gallery
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/contact"
-                  className="text-primary-foreground/80 hover:text-white transition-colors"
-                >
-                  Contact Us
-                </a>
-              </li>
-            </ul>
+<ul className="space-y-2">
+  <li>
+    <Link
+      to="/about"
+      className="text-primary-foreground/80 hover:text-white transition-colors"
+    >
+      About Us
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/events"
+      className="text-primary-foreground/80 hover:text-white transition-colors"
+    >
+      Upcoming Events
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/resources"
+      className="text-primary-foreground/80 hover:text-white transition-colors"
+    >
+      Study Resources
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/gallery"
+      className="text-primary-foreground/80 hover:text-white transition-colors"
+    >
+      Photo Gallery
+    </Link>
+  </li>
+  <li>
+    <Link
+      to="/contact"
+      className="text-primary-foreground/80 hover:text-white transition-colors"
+    >
+      Contact Us
+    </Link>
+  </li>
+</ul>
+
           </div>
 
           {/* Contact Info */}
