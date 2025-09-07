@@ -51,7 +51,7 @@ const About = () => {
     {
       id: 4,
       name: "K VARSHITH REDDY",
-      role: "GEN SEC & TREASURER",
+      role: "GENERAL SECRETARY",
       image: "/team/4.jpg"
     },
     {
