@@ -158,7 +158,7 @@ const About = () => {
     },
     {
       id: 22,
-      name: "kARTHIK",
+      name: "KARTHIK",
       role: "ADVISORY",
       image: "/team/22.jpg"
     },
