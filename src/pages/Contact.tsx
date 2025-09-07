@@ -132,7 +132,7 @@ const Contact = () => {
                   </div>
                 </a>
                 <a
-                  href="mailto:csac@sreenidhi.edu.in?subject=Inquiry%20about%20CSAC&body=Hello%2C%0A%0AI%20would%20like%20to%20know..."
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=csac@sreenidhi.edu.in&su=Inquiry%20about%20CSAC&body=Hello%2C%0A%0AI%20would%20like%20to%20know..."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"
@@ -141,6 +141,7 @@ const Contact = () => {
                     <Mail className="h-6 w-6 text-accent-foreground" />
                   </div>
                 </a>
+
                 <a
                   href="https://chat.whatsapp.com/GwfBDQGipjtLY2dZKUhoIz?mode=ems_copy_c"
                   target="_blank"
@@ -201,7 +202,7 @@ const Contact = () => {
                   </a>
 
                   <a
-                    href="https://www.googledrive.com"
+                    href="https://drive.google.com/drive/folders/1cmvWEIlXdSSb3Fm8AavGkbE8y2UaJcgv"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block"
@@ -261,7 +262,6 @@ const Contact = () => {
                     rel="noopener noreferrer"
                     className="block"
                   >
-
                     <Card className="hover-scale hover-glow transition-all duration-300 border-primary/20">
                       <CardContent className="p-6">
                         <div className="flex items-center justify-between">

@@ -38,7 +38,7 @@ const Events = () => {
       description:
         "Interactive workshop to master time management techniques and boost productivity for civil services preparation.",
       seats: "Unlimited",
-      type: "WorkShop",
+      type: "Workshop",
       link: "https://forms.gle/cAcDUoxVMtk9o3dt5",
       display: true,
     },
@@ -72,7 +72,7 @@ const Events = () => {
     },
     {
       id: 1,
-      title: "mock upsc",
+      title: "mock UPSC",
       date: "November 3rd & 4th 2025",
       time: "10:00 AM - 4:00 PM",
       venue: "Yet to be decided",
@@ -80,7 +80,7 @@ const Events = () => {
       description:
         "Simulated UPSC exam experience to assess your preparation and boost exam readiness.",
       seats: "50 seats available",
-      type: "mock exam",
+      type: "Mock exam",
       link: "https://forms.gle/8y7Nd2Y5jjHLDwdV7",
       display: true,
     },
@@ -124,7 +124,7 @@ const Events = () => {
         "This session explored career opportunities in the government sector for engineering graduates, with practical insights shared by the renowned mentor Akella Raghavendra sir.",
     },
     {
-      title: "An interactive session with Shri Jaya Prakash Narayan Sir, IAS ",
+      title: "An interactive session with Shri Jaya Prakash Narayana Sir, IAS ",
       date: "August 2024",
       participants: "500+ attendees",
       description:
@@ -132,14 +132,14 @@ const Events = () => {
     },
     {
       title: "A Guest Lecture by Shri J D Lakshmi Narayan Sir, IPS",
-      date: "July 2024",
+      date: "July 2023",
       participants: "500+ attendees",
       description:
         "This guest lecture by Mr JD Lakshmi Narayan left a profound impact on the participants. The session inspired students to imbibe leadership qualities and apply the insights shared to their career journeys.",
     },
     {
-      title: "An inspirational session by Balalatha Mam",
-      date: "June 2024",
+      title: "An Inspirational session by Balalatha Mam",
+      date: "June 2023",
       participants: "500+ attendees",
       description:
         " Ms. Balalatha, a former Deputy Director in the Ministry of Defence, inspired students with her journey and provided insights into strategic UPSC preparation. ",
@@ -153,7 +153,7 @@ const Events = () => {
     },
     {
       title: "CSAC 8th Anniversary Celebrations",
-      date: "April 2024",
+      date: "September 2024",
       participants: "75+ aspirants",
       description:
         "A memorable farewell-style gathering with engaging sessions and shared experiences.",

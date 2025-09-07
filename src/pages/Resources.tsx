@@ -172,7 +172,7 @@ const Resources = () => {
     {
       title: "World Geography",
       type: "Notes",
-      duration: "15 mb",
+      duration: "135 pages",
       description: "Complete preparation strategy and time management tips",
       link: "https://drive.google.com/file/d/1a4qApDIF6ooabnaGN486FtEIAqW_fWOZ/view?usp=sharing",
     },
@@ -187,7 +187,7 @@ const Resources = () => {
     {
       title: "Biology Notes",
       type: "PDF",
-      duration: "1 hour",
+      duration: "100 pages",
       description: "Effective answer writing techniques with examples",
       link: "https://drive.google.com/file/d/1EoAOsc0-y6ZKMqQvGE8S6JyoSZPNpZN1/view?usp=sharing",
     },

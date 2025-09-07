@@ -25,7 +25,7 @@ const Index = () => {
   const [upcomingEvents, setUpcomingEvents] = useState([
         {
       date: "Oct 7",
-      title: "Workshops on Time management",
+      title: "Workshop on Time management",
       time: "10:00 AM - 4:00 PM",
       venue: "49/-",
        link :"https://forms.gle/cAcDUoxVMtk9o3dt5",
@@ -46,7 +46,7 @@ const Index = () => {
     },
     {
       date: "Nov 3rd & 4th",
-      title: "mock upsc",
+      title: "mock UPSC",
       time: "10:00 AM - 4:00 PM",
       venue: "Free", // i am showing price here
       link :"https://forms.gle/8y7Nd2Y5jjHLDwdV7",
@@ -157,7 +157,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
             <div className="hover:scale-110 transform transition-all duration-300">
               <Users className="h-12 w-12 mx-auto mb-4 text-saffron" />
-              <h3 className="text-3xl font-bold">600+</h3>
+              <h3 className="text-3xl font-bold">300+</h3>
               <p className="text-lg opacity-90">Active Members</p>
             </div>
             <div className="hover:scale-110 transform transition-all duration-300">

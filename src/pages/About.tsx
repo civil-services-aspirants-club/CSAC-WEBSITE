@@ -87,13 +87,13 @@ const About = () => {
     {
       id: 10,
       name: "P AARTHI",
-      role: "PR HEAD",
+      role: "PUBLIC RELATIONS HEAD",
       image: "/team/10.jpg"
     },
     {
       id: 11,
       name: "A JYOTHSNA",
-      role: "DEPUTY PR",
+      role: "DEPUTY PUBLIC RELATIONS",
       image: "/team/11.jpg"
     },
     {
@@ -135,7 +135,7 @@ const About = () => {
     {
       id: 18,
       name: "SATHWIKA REDDY ",
-      role: "DEPUTY PR",
+      role: "DEPUTY PUBLIC RELATIONS",
       image: "/team/18.jpg"
     },
     {
@@ -146,26 +146,26 @@ const About = () => {
     },
     {
       id: 20,
-      name: "Kalyani",
-      role: "Advisory",
+      name: "KALYANI",
+      role: "ADVISORY",
       image: "/team/20.jpg"
     },
     {
       id: 21,
-      name: "Spoorthy",
-      role: "Advisory",
+      name: "SPOORTHY",
+      role: "ADVISORY",
       image: "/team/21.jpg"
     },
     {
       id: 22,
-      name: "karthik",
-      role: "Advisory",
+      name: "kARTHIK",
+      role: "ADVISORY",
       image: "/team/22.jpg"
     },
     {
       id: 23,
-      name: "Banudeep",
-      role: "Advisory",
+      name: "BANUDEEP",
+      role: "ADVISORY",
       image: "/team/23.jpg"
     }
   ];
