@@ -110,7 +110,7 @@ const Events = () => {
         "An insightful session delivered by Shri GHP Raju Sir, IPS, sharing valuable guidance and experiences.",
     },
     {
-      title: "Annadaata - A celebration for Kisan Diwas",
+      title: "Annadaata - A Celebration for Kisan Diwas",
       date: "December 2024",
       participants: "70+ attendees",
       description:
