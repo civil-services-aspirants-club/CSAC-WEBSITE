@@ -79,5 +79,17 @@
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.38.0",
     "vite": "^5.4.19"
-  }
+  },
+  "description": "How to Edit This Code",
+  "main": "eslint.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surya-vikas/CSAC-WEBSITE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surya-vikas/CSAC-WEBSITE/issues"
+  },
+  "homepage": "https://github.com/surya-vikas/CSAC-WEBSITE#readme"
 }

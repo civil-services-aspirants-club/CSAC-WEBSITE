@@ -45,6 +45,8 @@ const Gallery = () => {
           {/* Photo Grid - Ready for direct image uploads */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Photos will be added directly here */}
+            <img src="/gallery/img47.jpg" alt="Photo 47" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
+    
            <img src="/gallery/img1.jpg" alt="Photo 1" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img2.jpg" alt="Photo 2" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />
 <img src="/gallery/img3.jpg" alt="Photo 3" loading="lazy" className="w-full h-64 object-cover rounded-xl shadow-md" />

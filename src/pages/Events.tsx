@@ -31,7 +31,7 @@ const Events = () => {
     {
       id: 1,
       title: "Workshop On time Management",
-      date: "October 7, 2025",
+      date: "April 7, 2026",
       time: "10:00 AM - 4:00 PM",
       venue: "Yet To be Decided",
       speaker: "Yet to be decided",
@@ -40,7 +40,7 @@ const Events = () => {
       seats: "Unlimited",
       type: "Workshop",
       link: "https://forms.gle/cAcDUoxVMtk9o3dt5",
-      display: false,
+      display: true,
     },
     {
       id: 2,
@@ -81,7 +81,7 @@ const Events = () => {
         "Simulated UPSC exam experience to assess your preparation and boost exam readiness.",
       type: "Mock exam",
       link: "https://docs.google.com/forms/d/e/1FAIpQLSfJ73UTD0bWlxI50ViPAFmD2k3BRV6WJ38KHCDJVCVWe4k_Eg/viewform",
-      display: true,
+      display: false,
     },
 
     {
@@ -101,6 +101,13 @@ const Events = () => {
   ];
 
   const pastEvents = [
+    {
+      title: "MOCK UPSC",
+      date:"Feb 2026",
+      participants: "100+ attendees",
+      description:
+        "A simulated UPSC examination experience designed to help aspirants assess their preparation and improve their exam strategy.",
+    },
     {
       title: "Guest lecture by Shri GHP Raju Sir, IPS",
       date: "July 2025",

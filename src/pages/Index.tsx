@@ -23,12 +23,19 @@ const Index = () => {
     "https://drive.google.com/drive/folders/1cmvWEIlXdSSb3Fm8AavGkbE8y2UaJcgv?usp=sharing";
   const [editingEvent, setEditingEvent] = useState<number | null>(null);
   const [upcomingEvents, setUpcomingEvents] = useState([
-    {      
-      date: "Feb 17th , 19th and 20th 2026",
-      title: "Mock UPSC",
+
+    {
+      date: "April 7, 2026",
+      title: "Workshop On time Management",
       time: "10:00 AM - 4:00 PM",
-      venue: "Free",
-      link :"https://docs.google.com/forms/d/e/1FAIpQLSfJ73UTD0bWlxI50ViPAFmD2k3BRV6WJ38KHCDJVCVWe4k_Eg/viewform",
+      venue: "Yet To be Decided",
+      speaker: "Yet to be decided",
+      description:
+        "Interactive workshop to master time management techniques and boost productivity for civil services preparation.",
+      seats: "Unlimited",
+      type: "Workshop",
+      link: "https://forms.gle/cAcDUoxVMtk9o3dt5",
+      display: true,
     },
   ]);
   const handleRegistration = () => {
