@@ -54,24 +54,24 @@ const About = () => {
       role: "GENERAL SECRETARY",
       image: "/team/4.jpg"
     },
-    {
-      id: 5,
-      name: "T SURYA VIKAS",
-      role: "JOINT SECRETARY",
-      image: "/team/5.jpg"
-    },
-    {
-      id: 6,
-      name: "K SANDEEP REDDY",
-      role: "VICE PRESIDENT",
-      image: "/team/6.jpg"
-    },
-    {
-      id: 7,
-      name: "MVS NAGAMANI",
-      role: "DESIGNING & PR HEAD",
-      image: "/team/7.jpg"
-    },
+    // {
+    //   id: 5,
+    //   name: "T SURYA VIKAS",
+    //   role: "JOINT SECRETARY",
+    //   image: "/team/5.jpg"
+    // },
+    // {
+    //   id: 6,
+    //   name: "K SANDEEP REDDY",
+    //   role: "VICE PRESIDENT",
+    //   image: "/team/6.jpg"
+    // },
+    // {
+    //   id: 7,
+    //   name: "MVS NAGAMANI",
+    //   role: "DESIGNING & PR HEAD",
+    //   image: "/team/7.jpg"
+    // },
     {
       id: 8,
       name: "MD SAMAD",
