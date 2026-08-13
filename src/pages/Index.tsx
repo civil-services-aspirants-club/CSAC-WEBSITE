@@ -18,14 +18,14 @@ import heroImage from "@/assets/hero-bg-new.jpg";
 import csacLogo from "@/assets/csac-logo.png";
 const Index = () => {
   // Replace these with your actual links
-  const registrationFormLink = "https://forms.gle/71MmruT8e8T7H25w8";
+  const registrationFormLink = "https://forms.gle/P6N4gzCAxkPj755F7";
   const googleDriveLink =
     "https://drive.google.com/drive/folders/1cmvWEIlXdSSb3Fm8AavGkbE8y2UaJcgv?usp=sharing";
   const [editingEvent, setEditingEvent] = useState<number | null>(null);
   const [upcomingEvents, setUpcomingEvents] = useState([
 
     {
-      date: "April 7, 2026",
+      date: "October 7, 2026",
       title: "Workshop On time Management",
       time: "10:00 AM - 4:00 PM",
       venue: "Yet To be Decided",
